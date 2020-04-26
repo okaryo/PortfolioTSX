@@ -32,6 +32,10 @@ export const ProgrammingSkillBars = [
     progressWidth: { width: '30%' }
   },
   {
+    name: 'Electron',
+    progressWidth: { width: '30%' }
+  },
+  {
     name: 'C++',
     progressWidth: { width: '30%' }
   }

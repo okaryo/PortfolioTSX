@@ -2,23 +2,24 @@
   padding: 30px;
   color: #231815;
 }
-.portfolio_profile_me::after {
-  content: '';
-  display: block;
-  clear: both;
+.portfolio_profile_me {
+  display: flex;
 }
 .portfolio_profile_me img {
-  display: block;
-  float: left;
   height: 88px;
   border: solid 1px #dcdddd;
   margin-right: 22px;
 }
-.portfolio_profile_me h2 {
+.portfolio_profile_me_text h2 {
   font-size: 20px;
 }
-.portfolio_profile_me p {
+.portfolio_profile_me_text p {
   font-size: 14px;
+}
+.portfolio_profile_me_comment {
+  display: inline-block;
+  margin-top: 5px;
+  max-width: 450px;
 }
 .portfolio_profile_detail {
   margin-top: 30px;
@@ -26,9 +27,7 @@
   justify-content: space-between;
 }
 .portfolio_profile_detail h3 {
-  /* display: inline-block; */
   margin-bottom: 10px;
-  /* padding-bottom: 3px; */
   padding-bottom: 3px;
   font-size: 18px;
   border-bottom: 2px solid rgba(117, 117, 117, 0.5);

@@ -3,16 +3,17 @@ import '../stylesheets/Contact.css'
 
 
 const Contact = () => {
+  const inputValue = "Please contact me on Twitter if you need me."
 
   return(
     <div className="portfolio_contact_container">
       <h3>Feel free to contact me!</h3>
       <p>E-mail</p>
-      <input type="text" value={"Please contact me on Twitter if you need me."} />
+      <input type="text" defaultValue={inputValue} />
       <p>Subject</p>
-      <input type="text" value={"Please contact me on Twitter if you need me."} />
+      <input type="text" defaultValue={inputValue} />
       <p>Message</p>
-      <textarea rows={10}>Please contact me on Twitter if you need me.</textarea>
+      <textarea rows={10} defaultValue={inputValue}></textarea>
       <div className="portfolio_contact_button">
         <button>
           <a

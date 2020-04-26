@@ -39,8 +39,13 @@ const Profile = () => {
     <div className="portfolio_profile_container">
       <section className="portfolio_profile_me">
         <img src={me} alt="me_icon"/>
-        <h2>OKARYO / Ryotaro Oka</h2>
-        <p>Web Engineer</p>
+        <div className="portfolio_profile_me_text">
+          <h2>OKARYO / Ryotaro Oka</h2>
+          <p>Web Engineer</p>
+          <p className="portfolio_profile_me_comment">
+            I love making things. I want to become a person who can create things that expand people's perspectives and choices.
+          </p>
+        </div>
       </section>
       <div className="portfolio_profile_detail">
         <section className="portfolio_profile_history">
