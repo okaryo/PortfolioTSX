@@ -1,0 +1,66 @@
+.portfolio_contact_container {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 700px;
+}
+.portfolio_contact_container h3 {
+  font-size: 20px;
+}
+.portfolio_contact_container p {
+  margin: 22px 0 3px;
+  font-size: 18px;
+}
+.portfolio_contact_container input, .portfolio_contact_container textarea {
+  width: 100%;
+  border: 1px solid #d8dadf;
+  padding: 10px;
+  color: #57575f;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+.portfolio_contact_button {
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolio_contact_container button {
+  margin-top: 16px;
+  display: inline-block;
+  height: 36px;
+  min-width: 64px;
+  border-radius: 4px;
+  border: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #61d800;
+  outline: none;
+  cursor: pointer;
+}
+.portfolio_contact_container button:hover, .portfolio_contact_container button:focus {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+              0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 10px 0px rgba(0,0,0,.12);
+}
+.portfolio_contact_container button:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0px 3px 14px 2px rgba(0,0,0,.12);
+}
+.portfolio_contact_container button a {
+  display: inline-block;
+  padding: 0 16px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: inherit;
+  line-height: 36px;
+}
+
+@media (max-width: 720px) {
+  .portfolio_contact_button {
+    justify-content: center;
+  }
+  .portfolio_contact_container button {
+    width: 85%;
+  }
+}

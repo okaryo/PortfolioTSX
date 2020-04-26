@@ -1,0 +1,100 @@
+.portfolio_profile_container {
+  padding: 30px;
+  color: #231815;
+}
+.portfolio_profile_me::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.portfolio_profile_me img {
+  display: block;
+  float: left;
+  height: 88px;
+  border: solid 1px #dcdddd;
+  margin-right: 22px;
+}
+.portfolio_profile_me h2 {
+  font-size: 20px;
+}
+.portfolio_profile_me p {
+  font-size: 14px;
+}
+.portfolio_profile_detail {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio_profile_detail h3 {
+  /* display: inline-block; */
+  margin-bottom: 10px;
+  /* padding-bottom: 3px; */
+  padding-bottom: 3px;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(117, 117, 117, 0.5);
+}
+.portfolio_profile_detail ul {
+  margin-bottom: 30px;
+}
+.portfolio_profile_detail li {
+  font-size: 16px;
+}
+.portfolio_profile_detail .portfolio_profile_list_sub {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #757575;
+}
+.portfolio_profile_history {
+  width: 48%;
+}
+.portfolio_profile_skill {
+  width: 48%;
+}
+.portfolio_profile_skill_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio_profile_skill_container:first-of-type {
+  margin-bottom: 30px;
+}
+.portfolio_profile_skill_unit {
+  width: 48%;
+  margin-bottom: 15px;
+}
+.portfolio_profile_skill_unit h5 {
+  margin-bottom: 1px;
+  font-size: 14px;
+}
+.portfolio_profile_skill_bar {
+  height: 11px;
+  position: relative;
+}
+.portfolio_profile_skill_progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #75e900;
+  z-index: 2;
+}
+.portfolio_profile_skill_unprogress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+@media (max-width: 720px) {
+  .portfolio_profile_detail {
+    flex-wrap: wrap;
+  }
+  .portfolio_profile_history {
+    width: 100%;
+  }
+  .portfolio_profile_skill {
+    width: 100%;
+  }
+}
