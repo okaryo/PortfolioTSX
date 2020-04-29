@@ -27,13 +27,13 @@ const App = () => {
           />
           <Products />
         </Route>
-        <Route path="/profile">
+        <Route exact path="/profile">
           <Header
             navigationStyle={NavigationStyle.activeProfile}
           />
           <Profile />
         </Route>
-        <Route path="/contact">
+        <Route exact path="/contact">
           <Header
             navigationStyle={NavigationStyle.activeContact}
           />

@@ -67,7 +67,7 @@ const Products = () => {
           <div className="portfolio_product_card_image_continer">
             <img
               style={imagePositionStyle}
-              src={`http://okaryo.github.io/api/images/portfolio/products/${product.imageName}`} alt={product.title}
+              src={`https://okaryo.github.io/api/images/portfolio/products/${product.imageName}`} alt={product.title}
             />
           </div>
           <div className="portfolio_product_card_text_container">
