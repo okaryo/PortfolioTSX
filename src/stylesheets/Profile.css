@@ -85,6 +85,17 @@
   width: 100%;
   background-color: #EEEEEE;
 }
+.portfolio_profile_skill_bar_omit-line {
+  position: absolute;
+  top: -1px;
+  right: 10%;
+  width: 6px;
+  height: 13px;
+  background-color: #FFFFFF;
+  border-left: 1px dotted #AAAAAA;
+  border-right: 1px dotted #AAAAAA;
+  z-index: 3;
+}
 
 @media (max-width: 720px) {
   .portfolio_profile_detail {

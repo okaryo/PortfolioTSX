@@ -23,6 +23,7 @@ const Profile = () => {
           <div className="portfolio_profile_skill_bar">
             <div className="portfolio_profile_skill_progress" style={skillBar.progressWidth}></div>
             <div className="portfolio_profile_skill_unprogress"></div>
+            <div className="portfolio_profile_skill_bar_omit-line"></div>
           </div>
         </div>
       )

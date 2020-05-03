@@ -17,11 +17,11 @@ export const ProgrammingSkillBars = [
   },
   {
     name: 'Ruby',
-    progressWidth: { width: '60%' }
+    progressWidth: { width: '70%' }
   },
   {
     name: 'Rails',
-    progressWidth: { width: '60%' }
+    progressWidth: { width: '70%' }
   },
   {
     name: 'React',
