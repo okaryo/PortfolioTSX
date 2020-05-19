@@ -109,7 +109,7 @@ export const products = [
   },
   {
     title: 'BTNG',
-    year: 'July. 2019',
+    year: 'July 2019',
     imageName: 'btng.png',
     imagePositionMiddle: false,
     description: 'You can make CSS buttons visually and easily!',
@@ -182,7 +182,7 @@ export const products = [
     year: 'Dec. 2016 ~',
     imageName: 'line_stamp.png',
     imagePositionMiddle: false,
-    description: "My original characters! I'm grad if you buy and use them.",
+    description: "My original characters! I'm glad if you buy and use them.",
     buttons: [
       {
         buttonText: 'LINE STORE',
