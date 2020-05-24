@@ -2,6 +2,10 @@ export const ProductItems = {
   title: 'Products',
   items: [
     {
+      itemName: 'NewTabLinkGitHub',
+      itemUrl: 'https://chrome.google.com/webstore/detail/newtablinkgithub/ocjamlpogoaghjpapnfpaopgiccjkaim'
+    },
+    {
       itemName: 'MoonAgeScript',
       itemUrl: 'https://github.com/okaryo/MoonAgeScript'
     },

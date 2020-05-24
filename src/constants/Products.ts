@@ -4,6 +4,25 @@ const githubButtonColor = '#24292e'
 
 export const products = [
   {
+    title: 'NewTabLinkGitHub',
+    year: 'May 2020',
+    imageName: 'new_tab_link_github.png',
+    imagePositionMiddle: true,
+    description: ' This extension allows you to open a link in the markdown of the github site in a new tab.',
+    buttons: [
+      {
+        buttonText: 'Chrome Store',
+        buttonColor: primaryButtonColor,
+        buttonUrl: 'https://chrome.google.com/webstore/detail/newtablinkgithub/ocjamlpogoaghjpapnfpaopgiccjkaim'
+      },
+      {
+        buttonText: 'Github',
+        buttonColor: githubButtonColor,
+        buttonUrl: 'https://github.com/okaryo/ChromeExtension/tree/master/NewTabLinkGitHub'
+      }
+    ]
+  },
+  {
     title: '2nd Portfolio',
     year: 'Apr. 2020',
     imageName: 'second_portfolio.png',
