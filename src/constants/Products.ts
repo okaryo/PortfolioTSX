@@ -8,7 +8,7 @@ export const products = [
     year: 'May 2020',
     imageName: 'new_tab_link_github.png',
     imagePositionMiddle: true,
-    description: ' This extension allows you to open a link in the markdown of the github site in a new tab.',
+    description: 'Chrome extension that opens links on github issues and pull requests in a new tab.',
     buttons: [
       {
         buttonText: 'Chrome Store',
