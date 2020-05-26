@@ -2,6 +2,10 @@ export const ProductItems = {
   title: 'Products',
   items: [
     {
+      itemName: 'PalindromeScript',
+      itemUrl: 'https://okaryo.github.io/PalindromeScript/index.html'
+    },
+    {
       itemName: 'NewTabLinkGitHub',
       itemUrl: 'https://chrome.google.com/webstore/detail/newtablinkgithub/ocjamlpogoaghjpapnfpaopgiccjkaim'
     },
