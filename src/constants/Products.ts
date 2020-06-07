@@ -4,6 +4,25 @@ const githubButtonColor = '#24292e'
 
 export const products = [
   {
+    title: 'AtCoderLanguageCleaner',
+    year: 'May 2020',
+    imageName: 'atcoder_language_cleaner.png',
+    imagePositionMiddle: true,
+    description: 'This Chrome extension allows you to register the using language in your storage and only show information about the language you need.',
+    buttons: [
+      {
+        buttonText: 'Chrome Store',
+        buttonColor: primaryButtonColor,
+        buttonUrl: 'https://chrome.google.com/webstore/detail/atcoderlanguagecleaner/baihjceippgonliblcodemljahaddfgk'
+      },
+      {
+        buttonText: 'Github',
+        buttonColor: githubButtonColor,
+        buttonUrl: 'https://github.com/okaryo/ChromeExtension/tree/master/AtCoderLanguageCleaner'
+      }
+    ]
+  },
+  {
     title: 'PalindromeScript',
     year: 'May 2020',
     imageName: 'palindrome_script.png',
