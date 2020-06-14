@@ -2,6 +2,14 @@ export const ProductItems = {
   title: 'Products',
   items: [
     {
+      itemName: 'ButtonGenerator',
+      itemUrl: 'https://okaryo.github.io/ButtonGenerator/'
+    },
+    {
+      itemName: 'AtCoderLanguageCleaner',
+      itemUrl: 'https://chrome.google.com/webstore/detail/atcoderlanguagecleaner/baihjceippgonliblcodemljahaddfgk'
+    },
+    {
       itemName: 'PalindromeScript',
       itemUrl: 'https://okaryo.github.io/PalindromeScript/index.html'
     },

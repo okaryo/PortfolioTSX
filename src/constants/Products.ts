@@ -4,6 +4,25 @@ const githubButtonColor = '#24292e'
 
 export const products = [
   {
+    title: 'ButtonGenerator',
+    year: 'June 2020',
+    imageName: 'button_generator.png',
+    imagePositionMiddle: false,
+    description: 'You can make CSS buttons visually and easily! Moreover, you can generate CSS Code automatically and copy to clipboard at one click!',
+    buttons: [
+      {
+        buttonText: 'Visit Site',
+        buttonColor: primaryButtonColor,
+        buttonUrl: 'https://okaryo.github.io/ButtonGenerator/'
+      },
+      {
+        buttonText: 'Github',
+        buttonColor: githubButtonColor,
+        buttonUrl: 'https://github.com/okaryo/ButtonGenerator'
+      }
+    ]
+  },
+  {
     title: 'AtCoderLanguageCleaner',
     year: 'May 2020',
     imageName: 'atcoder_language_cleaner.png',
