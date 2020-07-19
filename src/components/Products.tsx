@@ -68,6 +68,7 @@ const Products = () => {
             <img
               style={imagePositionStyle}
               src={`https://okaryo.github.io/api/images/portfolio/products/${product.imageName}`} alt={product.title}
+              loading="lazy"
             />
           </div>
           <div className="portfolio_product_card_text_container">
