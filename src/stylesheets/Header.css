@@ -1,9 +1,13 @@
 /* header */
 .portfolio_header {
+  position: fixed;
   display: flex;
   height: 48px;
+  width: 100%;
   padding: 0 24px;
+  background-color: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+  z-index: 5;
 }
 .portfolio_title {
   display: flex;

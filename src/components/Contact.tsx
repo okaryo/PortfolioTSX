@@ -6,7 +6,7 @@ const Contact = () => {
   const inputValue = "Please contact me on Twitter if you need me."
 
   return(
-    <div className="portfolio_contact_container">
+    <div className="main_container portfolio_contact_container">
       <h3>Feel free to contact me!</h3>
       <p>E-mail</p>
       <input type="text" defaultValue={inputValue} />

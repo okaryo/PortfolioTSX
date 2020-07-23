@@ -1,6 +1,3 @@
-.portfolio_products_container {
-  padding: 30px;
-}
 .portfolio_product_card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 24%);
@@ -36,18 +33,19 @@
 }
 .portfolio_product_card_text_container h3 {
   display: inline-block;
+  margin-bottom: 2px;
   color: #232f34;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 19px;
 }
 .portfolio_product_card_text_year {
-  margin-bottom: 4px;
-  color: #818181;
-  font-size: 12px;
+  margin-bottom: 12px;
+  color: #5f6368;
+  font-size: 14px;
 }
 .portfolio_product_card_text_description {
-  margin-bottom: 48px;
-  color: #232f34;
+  margin-bottom: 52px;
+  color: #5f6368;
   font-size: 16px;
 }
 .portfolio_product_card_button_block {
@@ -90,23 +88,11 @@
 
 @media (max-width: 1080px) {
   .portfolio_product_card-grid {
-    grid-template-columns: repeat(auto-fill, 32%);
-  }
-}
-
-@media (max-width: 810px) {
-  .portfolio_products_container {
-    padding: 30px 10px;
-  }
-  .portfolio_product_card-grid {
     grid-template-columns: repeat(auto-fill, 48%);
   }
 }
 
-@media (max-width: 500px) {
-  .portfolio_products_container {
-    padding: 20px 10px;
-  }
+@media (max-width: 650px) {
   .portfolio_product_card-grid {
     grid-template-columns: repeat(auto-fill, 100%);
     grid-row-gap: 20px;

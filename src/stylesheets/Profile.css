@@ -1,12 +1,10 @@
 .portfolio_profile_container {
-  padding: 30px;
   color: #231815;
 }
 .portfolio_profile_me {
   display: flex;
 }
 .portfolio_profile_me img {
-  height: 88px;
   border: solid 1px #dcdddd;
   margin-right: 22px;
 }
@@ -98,6 +96,9 @@
 }
 
 @media (max-width: 720px) {
+  .portfolio_profile_container {
+    padding: 116px 30px 30px;
+  }
   .portfolio_profile_detail {
     flex-wrap: wrap;
   }

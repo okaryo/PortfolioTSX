@@ -16,3 +16,13 @@ a {
 li {
   list-style: none;
 }
+
+.main_container {
+  padding: 78px 30px 30px;
+}
+
+@media (max-width: 720px) {
+  .main_container {
+    padding: 116px 30px 30px;
+  }
+}

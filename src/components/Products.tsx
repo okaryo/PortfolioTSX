@@ -89,7 +89,7 @@ const Products = () => {
   }
 
   return(
-    <div className="portfolio_products_container">
+    <div className="main_container">
       <ProductCards
         products={products}
       />

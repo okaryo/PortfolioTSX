@@ -37,7 +37,7 @@ const Profile = () => {
   }
 
   return(
-    <div className="portfolio_profile_container">
+    <div className="main_container portfolio_profile_container">
       <section className="portfolio_profile_me">
         <img src={me} alt="me_icon" height="88" width="90" loading="lazy"/>
         <div className="portfolio_profile_me_text">
