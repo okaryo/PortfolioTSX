@@ -60,6 +60,10 @@ export const SocialItems = {
       itemUrl: 'https://github.com/okaryo'
     },
     {
+      itemName: 'Blog',
+      itemUrl: 'https://blog.okaryo.io'
+    },
+    {
       itemName: 'bookmeter',
       itemUrl: 'https://bookmeter.com/users/739784'
     },
