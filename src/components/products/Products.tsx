@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../stylesheets/Products.css'
 
 import {
@@ -40,9 +40,11 @@ type ButtonProps = {
 const Products = () => {
   const ProductList = () => {
     const [products, setProducts] = useState([] as Products[])
-    fetch('products.json')
-      .then(response => response.json())
-      .then(data => setProducts(data))
+    useEffect(() => {
+      fetch('products.json')
+        .then(response => response.json())
+        .then(data => setProducts(data))
+    }, [])
 
     const ButtonList: React.FC<ButtonListProps> = (props) => {
       const { links, status } = props.buttonListProps
