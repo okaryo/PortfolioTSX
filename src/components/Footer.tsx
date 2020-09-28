@@ -1,72 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { ProductItems, SocialItems } from '../constants/FooterItems'
+import { FooterItems } from '../constants/FooterItems'
 import '../stylesheets/Footer.css'
 
-interface FooterItemProps {
+type FooterItemsProps = {
   footerItems: {
-    title: string,
-    items: Array<{
-      itemName: string,
-      itemUrl: string
-    }>
-  }
+    name: string
+    link: string
+  }[]
 }
 
 const Footer = () => {
-  const FooterList = (props: FooterItemProps) => {
-    const footerList = props.footerItems
-
-    const FooterItems = footerList.items.map((item, index) => {
-      return(
-        <li key={index} className="portfolio_footer_item">
-          <a
-            href={item.itemUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.itemName}
-          </a>
-        </li>
-      )
-    })
+  const FooterList: React.FC<FooterItemsProps> = (props) => {
+    const footerItems = props.footerItems
 
     return(
-      <div>
-        <div className="portfolio_footer_item_title">{footerList.title}</div>
-        <ul>
-          {FooterItems}
-        </ul>
-      </div>
+      <ul className="portfolio_footer_list">
+        {footerItems.map((item) =>
+          <li key={item.name} className="portfolio_footer_item">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name}
+            </a>
+          </li>
+        )}
+      </ul>
     )
   }
 
   return(
     <footer className="portfolio_footer_container">
-      <div className="portfolio_footer_menus">
-        <div>
-          <div className="portfolio_footer_item_title">Portfolio</div>
-          <ul>
-            <li className="portfolio_footer_item">
-              <Link to="/products">Products</Link>
-            </li>
-            <li className="portfolio_footer_item">
-              <Link to="/profile">Profile</Link>
-            </li>
-            <li className="portfolio_footer_item">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="portfolio_footer_empty"></div>
-        <FooterList
-          footerItems={ProductItems}
-        />
-        <div className="portfolio_footer_empty"></div>
-        <FooterList
-          footerItems={SocialItems}
-        />
-      </div>
+      <FooterList footerItems={FooterItems} />
       <p className="portfolio_footer_copyright">Copyright &copy;2020 OKARYO</p>
     </footer>
   )

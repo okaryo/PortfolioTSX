@@ -1,19 +1,17 @@
 .portfolio_footer_container {
-  padding: 20px;
+  padding: 42px 20px 20px;
   background-color: #B6EE8C;
 }
-.portfolio_footer_menus {
+.portfolio_footer_list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.portfolio_footer_item_title {
-  margin: 10px 0 5px;
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 18px;
-}
 .portfolio_footer_item {
-  margin-top: 5px;
+  margin-top: 8px;
+}
+.portfolio_footer_item + .portfolio_footer_item {
+  margin-left: 16px;
 }
 .portfolio_footer_item > a {
   font-size: 14px;
@@ -23,11 +21,6 @@
 .portfolio_footer_item > a:hover {
   text-decoration: underline;
 }
-
-.portfolio_footer_empty {
-  flex-basis: 10%;
-}
-
 .portfolio_footer_copyright {
   margin-top: 30px;
   font-size: 12px;
