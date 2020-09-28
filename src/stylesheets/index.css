@@ -18,11 +18,11 @@ li {
 }
 
 .main_container {
-  padding: 78px 30px 30px;
+  padding: 78px 24px 30px;
 }
 
 @media (max-width: 720px) {
   .main_container {
-    padding: 116px 30px 30px;
+    padding: 116px 12px 30px;
   }
 }

@@ -1,6 +1,6 @@
 .portfolio_product_card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 24%);
+  grid-template-columns: repeat(auto-fill, 320px);
   grid-row-gap: 20px;
   grid-column-gap: 10px;
   justify-content: space-evenly;
