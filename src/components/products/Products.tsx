@@ -48,6 +48,7 @@ const Products = () => {
 
     const ButtonList: React.FC<ButtonListProps> = (props) => {
       const { links, status } = props.buttonListProps
+
       const Button: React.FC<ButtonProps> = (props) => {
         const { link, type } = props.buttonProps
         const DEFAULT_BUTTON_TEXT_COLOR = '#FFFFFF'
@@ -77,7 +78,7 @@ const Products = () => {
           <div style={{ backgroundColor: buttonColor }} className="portfolio_product_card_button">
             <a
               href={link}
-              target="_blank"
+              target={link && link !== '/' ? "_blank" : ""}
               rel="noopener noreferrer"
               style={{ color: buttonTextColor }}
             >

@@ -56,6 +56,9 @@
 }
 
 @media (max-width: 720px) {
+  .portfolio_contact_container {
+    padding: 116px 30px 30px;
+  }
   .portfolio_contact_button {
     justify-content: center;
   }
