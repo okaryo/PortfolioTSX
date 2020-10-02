@@ -17,6 +17,13 @@ jobs:
     - name: build
       run: npm run build
 
+  setup:
+    name: setup
+    runs-on: ubuntu-latest
+    steps:
+    - name: install firebase-tools
+      run: npm install firebase-tools
+
   deploy:
     name: deploy
     needs: build
