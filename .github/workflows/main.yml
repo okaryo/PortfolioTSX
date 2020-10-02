@@ -13,7 +13,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
     - name: setup
-      run: npm install firebase-tools
+      run: npm install -g firebase-tools
     - name: npm install
       run: npm install
     - name: build
