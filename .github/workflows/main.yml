@@ -6,49 +6,17 @@ on:
       - master
 
 jobs:
-  setup:
-    name: setup
+  build_and_deploy:
+    name: build and deploy
     runs-on: ubuntu-latest
     steps:
-    - name: install firebase-tools
-      run: npm install firebase-tools
-    - name: persist_to_workspace
-      uses: actions/upload-artifact@master
-      with:
-        name: my-workspace
-        path: /
-
-  build:
-    name: build
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-    - name: download_workspace
-      uses: actions/download-artifact@master
-      with:
-        name: my-workspace
-        path: /
     - name: checkout
       uses: actions/checkout@master
+    - name: setup
+      run: npm install firebase-tools
     - name: npm install
       run: npm install
     - name: build
       run: npm run build
-    - name: persist_to_workspace
-      uses: actions/upload-artifact@master
-      with:
-        name: my-workspace
-        path: /
-
-  deploy:
-    name: deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: download_workspace
-      uses: actions/download-artifact@master
-      with:
-        name: my-workspace
-        path: /
     - name: deploy
       run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
