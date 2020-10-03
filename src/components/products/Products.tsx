@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { dateFormatter } from '../../utils/dateFormatter'
 import '../../stylesheets/Products.css'
 
 import {
@@ -123,7 +124,7 @@ const Products = () => {
               </div>
               <div className="portfolio_product_card_text_container">
                 <h3>{product.name}</h3>
-                <p className="portfolio_product_card_text_year">{product.date}</p>
+                <p className="portfolio_product_card_text_year">{dateFormatter(product.date)}</p>
                 <p className="portfolio_product_card_text_description">{product.description}</p>
                 <ButtonList buttonListProps={{ links: product.links, status: product.status }} />
               </div>
