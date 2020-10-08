@@ -1,53 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+
+import { initialHeaderState } from '../states/InitialHeaderState'
+
 import '../stylesheets/Header.css'
 
-interface NavigationStyle {
-  navigationStyle: {
-    products:boolean,
-    profile: boolean,
-    contact: boolean
-  }
+type HeaderProps = {
+  activePage: string
 }
 
-const Header = (props: NavigationStyle) => {
-  const navigationStyle = props.navigationStyle
+const Header: React.FC<HeaderProps> = (props) => {
+  const { activePage } = props
 
-  const activeNavigationStyle = {
-    borderBottom: '2px solid #75e900'
-  }
-  const activeNavigationFontStyle = {
-    color: '#231815'
-  }
+  const [states, setStates] = useState(initialHeaderState)
+  useEffect(() => {
+    setStates({
+      ...states,
+      [activePage]: {
+        title: activePage.toUpperCase(),
+        to: `/${activePage}`,
+        isActive: true
+      }
+    })
+  }, [])
 
-  let productsList
-  let profileList
-  let contactList
-  if (navigationStyle.products) {
-    productsList = (
-      <li style={activeNavigationStyle}>
-        <Link style={activeNavigationFontStyle} to="/products">PRODUCTS</Link>
+  const NavigationList = Object.values(states).map((value) => {
+    const fontColorStyle = value.isActive ? { color: '#231815' } : {}
+    const navigationStyle = value.isActive ? { borderBottom: '2px solid #75e900' } : {}
+
+    return(
+      <li key={value.title} style={navigationStyle}>
+        <Link style={fontColorStyle} to={value.to}>{value.title}</Link>
       </li>
     )
-    profileList = <li><Link to="/profile">PROFILE</Link></li>
-    contactList = <li><Link to="/contact">CONTACT</Link></li>
-  } else if (navigationStyle.profile) {
-    productsList = <li><Link to="/products">PRODUCTS</Link></li>
-    profileList = (
-      <li style={activeNavigationStyle}>
-        <Link style={activeNavigationFontStyle} to="/profile">PROFILE</Link>
-      </li>
-    )
-    contactList = <li><Link to="/contact">CONTACT</Link></li>
-  } else if (navigationStyle.contact) {
-    productsList = <li><Link to="/products">PRODUCTS</Link></li>
-    profileList = <li><Link to="/profile">PROFILE</Link></li>
-    contactList = (
-      <li style={activeNavigationStyle}>
-        <Link style={activeNavigationFontStyle} to="/contact">CONTACT</Link>
-      </li>
-    )
-  }
+  })
 
   return(
     <header className="portfolio_header">
@@ -56,9 +42,7 @@ const Header = (props: NavigationStyle) => {
       </div>
       <div className="portfolio_navigation_block">
         <ul>
-          {productsList}
-          {profileList}
-          {contactList}
+          {NavigationList}
         </ul>
       </div>
     </header>

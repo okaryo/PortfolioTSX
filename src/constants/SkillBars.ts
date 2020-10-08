@@ -52,19 +52,19 @@ export const ProgrammingSkillBars = [
 export const OtherSkillBars = [
   {
     name: 'Law',
-    progressWidth: { width: '60%' }
+    progressWidth: { width: '50%' }
   },
   {
     name: 'Computer Science',
-    progressWidth: { width: '50%' }
+    progressWidth: { width: '40%' }
   },
   {
     name: 'Algorithm',
-    progressWidth: { width: '50%' }
+    progressWidth: { width: '40%' }
   },
   {
     name: 'Mathematics',
-    progressWidth: { width: '50%' }
+    progressWidth: { width: '40%' }
   },
   {
     name: 'Statistics',
