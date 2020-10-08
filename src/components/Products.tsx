@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { dateFormatter } from '../../utils/dateFormatter'
-import '../../stylesheets/Products.css'
+import { dateFormatter } from '../utils/dateFormatter'
+import '../stylesheets/Products.css'
 
 import {
   CLOSED_BUTTON_COLOR,
   PRIMARY_BUTTON_COLOR,
   GITHUB_BUTTON_COLOR
-} from '../../constants/colors'
+} from '../constants/Colors'
 
 type Products = {
   name: string,
