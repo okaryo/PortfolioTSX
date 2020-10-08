@@ -4,43 +4,22 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import Header from './components/Header'
-import Products from './components/products/Products'
-import Profile from './components/Profile'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import NavigationStyle from './constants/NavigationStyle'
+
+import ProductsPage from './pages/ProductsPage'
+import ProfilePage from './pages/ProfilePage'
+import ContactPage from './pages/ContactPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Header
-            navigationStyle={NavigationStyle.activeProducts}
-          />
-          <Products />
-        </Route>
-        <Route exact path="/products">
-          <Header
-            navigationStyle={NavigationStyle.activeProducts}
-          />
-          <Products />
-        </Route>
-        <Route exact path="/profile">
-          <Header
-            navigationStyle={NavigationStyle.activeProfile}
-          />
-          <Profile />
-        </Route>
-        <Route exact path="/contact">
-          <Header
-            navigationStyle={NavigationStyle.activeContact}
-          />
-          <Contact />
-        </Route>
+        <Route exact path="/" component={ProductsPage} />
+        <Route exact path="/products" component={ProductsPage} />
+        <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/contact" component={ContactPage} />
+        <Route component={NotFoundPage} />
       </Switch>
-      <Footer />
     </Router>
   )
 }
