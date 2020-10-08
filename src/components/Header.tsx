@@ -22,6 +22,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         isActive: true
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const NavigationList = Object.values(states).map((value) => {
