@@ -1,0 +1,12 @@
+.notFound_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 60px;
+}
+
+.notFound_header {
+  margin-bottom: 16px;
+  font-size: 48px;
+}
