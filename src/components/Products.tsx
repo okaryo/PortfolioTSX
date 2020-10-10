@@ -136,8 +136,11 @@ const Products = () => {
   }
 
   return(
-    <div className="main_container">
-      <ProductList />
+    <div>
+      <div className="headerSpace" />
+      <div className="mainBody">
+        <ProductList />
+      </div>
     </div>
   )
 }

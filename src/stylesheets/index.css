@@ -17,12 +17,22 @@ li {
   list-style: none;
 }
 
-.main_container {
-  padding: 78px 24px 30px;
+.headerSpace {
+  height: 48px;
+}
+
+.mainBody {
+  padding: 30px 24px 30px;
+  min-height: calc(100vh - 178px);
 }
 
 @media (max-width: 720px) {
-  .main_container {
-    padding: 116px 12px 30px;
+  .headerSpace {
+    height: 96px;
+  }
+
+  .mainBody {
+    padding: 20px 16px 30px;
+    min-height: calc(100vh - 254px);
   }
 }
