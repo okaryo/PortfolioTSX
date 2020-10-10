@@ -37,60 +37,63 @@ const Profile = () => {
   }
 
   return(
-    <div className="main_container portfolio_profile_container">
-      <section className="portfolio_profile_me">
-        <img src={me} alt="me_icon" height="88" width="90" loading="lazy"/>
-        <div className="portfolio_profile_me_text">
-          <h2>OKARYO / Ryotaro Oka</h2>
-          <p>Web Engineer</p>
-          <p className="portfolio_profile_me_comment">
-            I love making things. I want to become a person who can create things that expand people's perspectives and choices.
-          </p>
+    <div>
+      <div className="headerSpace" />
+      <section className="mainBody portfolio_profile_container">
+        <section className="portfolio_profile_me">
+          <img src={me} alt="me_icon" height="88" width="90" loading="lazy"/>
+          <div className="portfolio_profile_me_text">
+            <h2>OKARYO / Ryotaro Oka</h2>
+            <p>Web Engineer</p>
+            <p className="portfolio_profile_me_comment">
+              I love making things. I want to become a person who can create things that expand people's perspectives and choices.
+            </p>
+          </div>
+        </section>
+        <div className="portfolio_profile_detail">
+          <section className="portfolio_profile_history">
+            <h3>Experience</h3>
+            <ul>
+              <li>Clueit (Apr. 2020 - present)</li>
+              <li className="portfolio_profile_list_sub">Web engineer</li>
+              <li>Clueit (Aug. 2019 - Mar. 2020)</li>
+              <li className="portfolio_profile_list_sub">Web engineer internship</li>
+              <li>cram school teacher (May 2018 - Mar. 2019)</li>
+              <li className="portfolio_profile_list_sub">part time job</li>
+              <li>baker (May 2015 - Feb. 2017)</li>
+              <li className="portfolio_profile_list_sub">part time job</li>
+            </ul>
+            <h3>Education</h3>
+            <ul>
+              <li>The University of Tokyo, Faculty of Law (Apr. 2018 - present)</li>
+              <li className="portfolio_profile_list_sub">DepartmentⅠ: General Legal Studies Course</li>
+              <li>Taking a year off from university (Apr. 2017 - Mar. 2018)</li>
+              <li className="portfolio_profile_list_sub">Lost the meaning of life</li>
+              <li>The University of Tokyo, Faculty of Arts and Sciences (Apr. 2015 - Mar. 2017)</li>
+              <li className="portfolio_profile_list_sub">Human Sciences Ⅰ</li>
+              <li>SUNDAI Ochanomizu3 LB→LA (Apr. 2014 - Mar. 2015)</li>
+              <li className="portfolio_profile_list_sub">Ronin</li>
+            </ul>
+            <h3>Qualification</h3>
+            <ul>
+              <li>Statistical Society Certificate Grade 3 (Feb. 2020)</li>
+              <li className="portfolio_profile_list_sub">Pass with credit</li>
+              <li>Fundamental Information Technology Engineer (Nov. 2019)</li>
+            </ul>
+          </section>
+
+          <section className="portfolio_profile_skill">
+            <h3>Programming Skill</h3>
+            <Skills
+              skillBars={ProgrammingSkillBars}
+            />
+            <h3>Other Skill</h3>
+            <Skills
+              skillBars={OtherSkillBars}
+            />
+          </section>
         </div>
       </section>
-      <div className="portfolio_profile_detail">
-        <section className="portfolio_profile_history">
-          <h3>Experience</h3>
-          <ul>
-            <li>Clueit (Apr. 2020 - present)</li>
-            <li className="portfolio_profile_list_sub">Web engineer</li>
-            <li>Clueit (Aug. 2019 - Mar. 2020)</li>
-            <li className="portfolio_profile_list_sub">Web engineer internship</li>
-            <li>cram school teacher (May 2018 - Mar. 2019)</li>
-            <li className="portfolio_profile_list_sub">part time job</li>
-            <li>baker (May 2015 - Feb. 2017)</li>
-            <li className="portfolio_profile_list_sub">part time job</li>
-          </ul>
-          <h3>Education</h3>
-          <ul>
-            <li>The University of Tokyo, Faculty of Law (Apr. 2018 - present)</li>
-            <li className="portfolio_profile_list_sub">DepartmentⅠ: General Legal Studies Course</li>
-            <li>Taking a year off from university (Apr. 2017 - Mar. 2018)</li>
-            <li className="portfolio_profile_list_sub">Lost the meaning of life</li>
-            <li>The University of Tokyo, Faculty of Arts and Sciences (Apr. 2015 - Mar. 2017)</li>
-            <li className="portfolio_profile_list_sub">Human Sciences Ⅰ</li>
-            <li>SUNDAI Ochanomizu3 LB→LA (Apr. 2014 - Mar. 2015)</li>
-            <li className="portfolio_profile_list_sub">Ronin</li>
-          </ul>
-          <h3>Qualification</h3>
-          <ul>
-            <li>Statistical Society Certificate Grade 3 (Feb. 2020)</li>
-            <li className="portfolio_profile_list_sub">Pass with credit</li>
-            <li>Fundamental Information Technology Engineer (Nov. 2019)</li>
-          </ul>
-        </section>
-
-        <section className="portfolio_profile_skill">
-          <h3>Programming Skill</h3>
-          <Skills
-            skillBars={ProgrammingSkillBars}
-          />
-          <h3>Other Skill</h3>
-          <Skills
-            skillBars={OtherSkillBars}
-          />
-        </section>
-      </div>
     </div>
   )
 }
