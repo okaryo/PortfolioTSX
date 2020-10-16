@@ -1,4 +1,4 @@
-export const FooterItems = [
+export const FooterNavigationItems = [
   {
     name: 'Twitter',
     link: 'https://twitter.com/okaryo_tr'
