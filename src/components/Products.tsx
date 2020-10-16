@@ -12,7 +12,6 @@ type Products = {
   name: string,
   date: string,
   image: string
-  imagePosition: string
   description: string
   links: {
     type: string
@@ -109,15 +108,10 @@ const Products = () => {
 
     return(
       <div className="portfolio_product_card-grid">
-        {products.map((product, index) => {
-          let imagePositionStyle = {}
-          if (product.imagePosition === 'middle') imagePositionStyle = { bottom: 'auto' }
-
-          return(
+        {products.map((product, index) => (
             <div key={index} className="portfolio_product_card">
               <div className="portfolio_product_card_image_continer">
                 <img
-                  style={imagePositionStyle}
                   src={product.image} alt={product.name}
                   loading="lazy"
                 />
@@ -130,7 +124,7 @@ const Products = () => {
               </div>
             </div>
           )
-        })}
+        )}
       </div>
     )
   }
