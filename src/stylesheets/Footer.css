@@ -1,27 +1,26 @@
-.portfolio_footer_container {
+.footer_container {
   padding: 42px 20px 20px;
   background-color: #B6EE8C;
 }
-.portfolio_footer_list {
+.footer_navigationList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.portfolio_footer_item {
+.footer_navigationItem {
   margin-top: 8px;
 }
-.portfolio_footer_item + .portfolio_footer_item {
+.footer_navigationItem + .footer_navigationItem {
   margin-left: 16px;
 }
-.portfolio_footer_item > a {
-  font-size: 14px;
-  color: #3c3c3c;
+.footer_navigationItem-link {
   font-size: 16px;
+  color: #3c3c3c;
 }
-.portfolio_footer_item > a:hover {
+.footer_navigationItem-link:hover {
   text-decoration: underline;
 }
-.portfolio_footer_copyright {
+.footer_copyright {
   margin-top: 30px;
   font-size: 12px;
   text-align: center;
