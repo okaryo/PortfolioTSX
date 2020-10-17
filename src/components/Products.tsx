@@ -132,7 +132,7 @@ const Products = () => {
   return(
     <div>
       <div className="headerSpace" />
-      <div className="mainBody">
+      <div className="main_body">
         <ProductList />
       </div>
     </div>

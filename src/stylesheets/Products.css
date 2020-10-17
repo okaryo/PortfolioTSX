@@ -27,6 +27,7 @@
   right: 0;
   margin: auto;
   width: 100%;
+  height: auto;
 }
 .portfolio_product_card_text_container {
   padding: 10px;

@@ -8,7 +8,7 @@ const Contact = () => {
   return(
     <div>
       <div className="headerSpace" />
-      <div className="mainBody portfolio_contact_container">
+      <div className="main_body portfolio_contact_container">
         <h3>Feel free to contact me!</h3>
         <p>E-mail</p>
         <input type="text" defaultValue={inputValue} />

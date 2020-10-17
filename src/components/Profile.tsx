@@ -39,7 +39,7 @@ const Profile = () => {
   return(
     <div>
       <div className="headerSpace" />
-      <section className="mainBody portfolio_profile_container">
+      <section className="main_body portfolio_profile_container">
         <section className="portfolio_profile_me">
           <img src={me} alt="me_icon" height="88" width="90" loading="lazy"/>
           <div className="portfolio_profile_me_text">
