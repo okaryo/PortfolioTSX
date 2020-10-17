@@ -8,7 +8,7 @@
   justify-content: center;
 }
 .footer_navigationItem {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 .footer_navigationItem + .footer_navigationItem {
   margin-left: 16px;
@@ -22,6 +22,12 @@
 }
 .footer_copyright {
   margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.footer_noteAboutGA {
+  margin-top: 8px;
   font-size: 12px;
   text-align: center;
   letter-spacing: 1px;
