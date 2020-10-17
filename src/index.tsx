@@ -5,11 +5,11 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 import './stylesheets/Products.css'
-import '../stylesheets/Profile.css'
-import '../stylesheets/Contact.css'
-import '../stylesheets/NotFound.css'
-import '../stylesheets/Header.css'
-import '../../stylesheets/Footer.css'
+import './stylesheets/Profile.css'
+import './stylesheets/Contact.css'
+import './stylesheets/NotFound.css'
+import './stylesheets/Header.css'
+import './stylesheets/Footer.css'
 
 ReactDOM.render(
   <React.StrictMode>
