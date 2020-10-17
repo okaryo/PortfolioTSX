@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { dateFormatter } from '../utils/dateFormatter'
-import '../stylesheets/Products.css'
-
 import {
   CLOSED_BUTTON_COLOR,
   PRIMARY_BUTTON_COLOR,
@@ -75,7 +73,7 @@ const Products = () => {
         }
     
         return(
-          <div style={{ backgroundColor: buttonColor }} className="portfolio_product_card_button">
+          <div style={{ backgroundColor: buttonColor }} className="product_card_button">
             <a
               href={link}
               target={link && link !== '/' ? "_blank" : ""}
@@ -90,7 +88,7 @@ const Products = () => {
 
       if (status === 'closed') {
         return(
-          <div className="portfolio_product_card_button_block">
+          <div className="product_card_button_block">
             <Button buttonProps={{ link: '', type: 'closed' }} />
           </div>
         )
@@ -99,7 +97,7 @@ const Products = () => {
           <Button key={link.type} buttonProps={{ link: link.link, type: link.type }} />
         )
         return(
-          <div className="portfolio_product_card_button_block">
+          <div className="product_card_button_block">
             {buttonItems}
           </div>
         )
@@ -107,19 +105,19 @@ const Products = () => {
     }
 
     return(
-      <div className="portfolio_product_card-grid">
+      <div className="product_card-grid">
         {products.map((product, index) => (
-            <div key={index} className="portfolio_product_card">
-              <div className="portfolio_product_card_image_continer">
+            <div key={index} className="product_card">
+              <div className="product_card_image_continer">
                 <img
                   src={product.image} alt={product.name}
                   loading="lazy"
                 />
               </div>
-              <div className="portfolio_product_card_text_container">
+              <div className="product_card_text_container">
                 <h3>{product.name}</h3>
-                <p className="portfolio_product_card_text_year">{dateFormatter(product.date)}</p>
-                <p className="portfolio_product_card_text_description">{product.description}</p>
+                <p className="product_card_text_year">{dateFormatter(product.date)}</p>
+                <p className="product_card_text_description">{product.description}</p>
                 <ButtonList buttonListProps={{ links: product.links, status: product.status }} />
               </div>
             </div>
@@ -132,7 +130,7 @@ const Products = () => {
   return(
     <div>
       <div className="headerSpace" />
-      <div className="mainBody">
+      <div className="main_body">
         <ProductList />
       </div>
     </div>

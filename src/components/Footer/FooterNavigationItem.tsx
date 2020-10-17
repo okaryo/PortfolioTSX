@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../stylesheets/Footer.css'
 
 type FooterNavigationItemProps = {
   name: string

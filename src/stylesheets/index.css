@@ -21,7 +21,7 @@ li {
   height: 48px;
 }
 
-.mainBody {
+.main_body {
   padding: 30px 24px 30px;
   min-height: calc(100vh - 178px);
 }
@@ -31,7 +31,7 @@ li {
     height: 96px;
   }
 
-  .mainBody {
+  .main_body {
     padding: 20px 16px 30px;
     min-height: calc(100vh - 254px);
   }

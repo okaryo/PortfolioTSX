@@ -1,15 +1,16 @@
-.portfolio_contact_container {
+.contact_body {
   margin: 0 auto;
   max-width: 700px;
 }
-.portfolio_contact_container h3 {
+.contact_mainHeader {
   font-size: 20px;
 }
-.portfolio_contact_container p {
+.contact_inputLabel {
+  display: inline-block;
   margin: 22px 0 3px;
   font-size: 18px;
 }
-.portfolio_contact_container input, .portfolio_contact_container textarea {
+.contact_inputArea {
   width: 100%;
   border: 1px solid #d8dadf;
   padding: 10px;
@@ -18,13 +19,9 @@
   letter-spacing: 2px;
   border-radius: 2px;
 }
-.portfolio_contact_button {
-  display: flex;
-  justify-content: flex-end;
-}
-.portfolio_contact_container button {
-  margin-top: 16px;
-  display: inline-block;
+.contact_button {
+  float: right;
+  margin-top: 12px;
   height: 36px;
   min-width: 64px;
   border-radius: 4px;
@@ -34,17 +31,17 @@
   outline: none;
   cursor: pointer;
 }
-.portfolio_contact_container button:hover, .portfolio_contact_container button:focus {
+.contact_button:hover, .contact_button:focus {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
               0px 4px 5px 0px rgba(0, 0, 0, 0.14),
               0px 1px 10px 0px rgba(0,0,0,.12);
 }
-.portfolio_contact_container button:active {
+.contact_button:active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
               0px 8px 10px 1px rgba(0, 0, 0, 0.14),
               0px 3px 14px 2px rgba(0,0,0,.12);
 }
-.portfolio_contact_container button a {
+.contact_button-text {
   display: inline-block;
   padding: 0 16px;
   width: 100%;
@@ -56,10 +53,12 @@
 }
 
 @media (max-width: 720px) {
-  .portfolio_contact_button {
-    justify-content: center;
+  .contact_button {
+    float: none;
+    display: block;
+    margin: 12px auto 0;
   }
-  .portfolio_contact_container button {
+  .contact_body button {
     width: 85%;
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import FooterNavigationList from './FooterNavigationList'
 import { FooterNavigationItems } from '../../constants/FooterNavigationItems'
-import '../../stylesheets/Footer.css'
 
 const Footer = () => {
   return(
