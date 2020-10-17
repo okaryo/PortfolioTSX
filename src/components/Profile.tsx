@@ -1,7 +1,6 @@
 import React from 'react'
 import me from '../images/me.png'
 import { ProgrammingSkillBars, OtherSkillBars } from '../constants/SkillBars'
-import '../stylesheets/Profile.css'
 
 interface SkillBarsProps {
   skillBars: Array<{

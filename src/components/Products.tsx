@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { dateFormatter } from '../utils/dateFormatter'
-import '../stylesheets/Products.css'
-
 import {
   CLOSED_BUTTON_COLOR,
   PRIMARY_BUTTON_COLOR,

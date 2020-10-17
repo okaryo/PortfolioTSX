@@ -1,7 +1,5 @@
 import React from 'react'
-
 import notFoundImage from '../images/not_found.png'
-import '../stylesheets/NotFound.css'
 
 const NotFound = () => {
   return(

@@ -1,6 +1,4 @@
 import React from 'react'
-import '../stylesheets/Contact.css'
-
 
 const Contact = () => {
   const placeholder = "Please contact me on Twitter if you need me."

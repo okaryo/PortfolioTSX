@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import { initialHeaderState } from '../states/InitialHeaderState'
-
-import '../stylesheets/Header.css'
 
 type HeaderProps = {
   activePage: string
