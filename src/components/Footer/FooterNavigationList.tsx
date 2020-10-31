@@ -13,7 +13,7 @@ const FooterNavigationList: React.FC<FooterNavigationListProps> = (props) => {
 
   return(
     <ul className="footer_navigationList">
-      {navigationItems.map((item) => <FooterNavigationItem { ...item } />)}
+      {navigationItems.map((item) => <FooterNavigationItem key={item.name} { ...item } />)}
     </ul>
   )
 }
