@@ -1,5 +1,4 @@
-/* header */
-.portfolio_header {
+.header {
   position: fixed;
   display: flex;
   height: 48px;
@@ -9,71 +8,78 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
   z-index: 5;
 }
-.portfolio_title {
+.header_title {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
   height: 48px;
 }
-.portfolio_title a {
+.header_title-link {
   font-size: 24px;
 }
-.portfolio_navigation_block {
+.header_navigation {
   flex: 1 0 auto;
   margin-left: 48px;
 }
-.portfolio_navigation_block ul {
+.header_navigationList {
   display: inline-block;
 }
-.portfolio_navigation_block li {
+.header_navigationList-item {
   display: inline-block;
   height: 48px;
   vertical-align: middle;
 }
-.portfolio_navigation_block li:hover,
-.portfolio_navigation_block li:focus {
+.header_navigationList-item:hover,
+.header_navigationList-item:focus {
   border-bottom: 2px solid #757575;
 }
-.portfolio_navigation_block li + li {
+.header_navigationList-item + .header_navigationList-item {
   margin-left: 24px;
 }
-.portfolio_navigation_block a {
+.header_navigationList-link {
   display: inline-block;
   color: #757575;
   line-height: 48px;
   font-size: 18px;
 }
-.portfolio_navigation_block a:hover,
-.portfolio_navigation_block a:focus {
+.header_navigationList-link:hover,
+.header_navigationList-link:focus {
   color: #231815;
+}
+.header_navigationList-linkWithIcon {
+  display: flex;
+  align-items: center;
+}
+.header_navigationList-Icon {
+  opacity: 0.6;
 }
 
 @media (max-width: 720px) {
-  .portfolio_header {
+  .header {
     display: block;
     height: 96px;
     padding: 0;
     box-shadow: 0 0 0px;
   }
-  .portfolio_title {
+  .header_title {
     justify-content: center;
   }
-  .portfolio_navigation_block {
+  .header_navigation {
     margin-left: 0;
     border-top: 1px solid #F7F7F7;
     border-bottom: 1px solid #F6F6F6;
   }
-  .portfolio_navigation_block ul {
+  .header_navigationList {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  .portfolio_navigation_block li {
+  .header_navigationList-item {
     display: inline-block;
     height: 48px;
     vertical-align: middle;
   }
-  .portfolio_navigation_block li + li {
+  .header_navigationList-item + .header_navigationList-item {
     margin-left: 0;
   }
 }
