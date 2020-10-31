@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = (props) => {
           <li className="header_navigationList-item">
             <a href="https://blog.okaryo.io" className="header_navigationList-link header_navigationList-linkWithIcon">
               BLOG
-              <img src={externalLinkIcon} className="header_navigationList-Icon" width="24" height="24" loading="lazy"/>
+              <img src={externalLinkIcon} alt="external link icon" className="header_navigationList-Icon" width="24" height="24" loading="lazy"/>
             </a>
           </li>
         </ul>
