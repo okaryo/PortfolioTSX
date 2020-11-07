@@ -42,7 +42,7 @@ jobs:
       run: firebase deploy --token $FIREBASE_TOKEN --project okaryo-portfolio
 
   deploy_firebase_functions:
-    name: deploy firebase hosting
+    name: deploy firebase functions
     runs-on: ubuntu-latest
     steps:
     - name: checkout
@@ -54,7 +54,7 @@ jobs:
         GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
         GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
         ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
-      run: firebase functions:config:set gmail.email=$GMAIL_EMAIL gmail.password=$GMAIL_PASS admin.email=$ADMIN_EMAIL
+      run: firebase functions:config:set gmail.email=$GMAIL_EMAIL gmail.password=$GMAIL_PASS admin.email=$ADMIN_EMAIL --project okaryo-portfolio
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
