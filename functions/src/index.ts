@@ -28,7 +28,7 @@ ${data.content}
 `
 }
 
-const sendMail = functions.https.onCall(async (data) => {
+const sendMail = functions.https.onCall(async (data: contactMail) => {
   const adminMail = {
     from: gmailEmail,
     to: adminEmail,

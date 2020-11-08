@@ -54,7 +54,7 @@ jobs:
         GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
         GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
         ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
-      run: firebase functions:config:set gmail.email=$GMAIL_EMAIL gmail.password=$GMAIL_PASS admin.email=$ADMIN_EMAIL --project okaryo-portfolio
+      run: firebase functions:config:set gmail.email=$GMAIL_EMAIL gmail.password=$GMAIL_PASS admin.email=$ADMIN_EMAIL --token $FIREBASE_TOKEN --project okaryo-portfolio
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
