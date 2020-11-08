@@ -39,7 +39,7 @@ jobs:
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --token $FIREBASE_TOKEN --project okaryo-portfolio --only hosting
+      run: firebase deploy --only hosting --token $FIREBASE_TOKEN --project okaryo-portfolio
 
   deploy_firebase_functions:
     name: deploy firebase functions
@@ -62,4 +62,4 @@ jobs:
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --only functions --debug
+      run: firebase deploy --only functions --token $FIREBASE_TOKEN --project okaryo-portfolio

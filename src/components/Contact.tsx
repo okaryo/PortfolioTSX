@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import firebase from 'firebase'
+import { functions } from '../firebase'
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -26,7 +26,7 @@ const Contact = () => {
   const handleSubmit = (_: React.FormEvent<HTMLButtonElement>) => {
     const confirmSubmit = window.confirm('Send an email. Is this content correct?')
     if (confirmSubmit) {
-      const sendMail = firebase.functions().httpsCallable('sendMail')
+      const sendMail = functions.httpsCallable('sendMail')
       const data = {
         name: name,
         email: email,
