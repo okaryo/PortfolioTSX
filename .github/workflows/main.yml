@@ -62,4 +62,4 @@ jobs:
     - name: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --only functions --token $FIREBASE_TOKEN --project okaryo-portfolio
+      run: firebase deploy --only functions
