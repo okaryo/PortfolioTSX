@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { functions } from '../firebase'
+import 'firebase/functions'
 
 const Contact = () => {
   const [name, setName] = useState('')
