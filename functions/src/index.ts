@@ -28,7 +28,7 @@ ${data.content}
 `
 }
 
-const sendMail = functions.https.onCall(async (data: contactMail) => {
+export const sendMail = functions.https.onCall(async (data: contactMail) => {
   const adminMail = {
     from: gmailEmail,
     to: adminEmail,
@@ -42,5 +42,3 @@ const sendMail = functions.https.onCall(async (data: contactMail) => {
     console.error('There was an error while sending the email:', error)
   }
 })
-
-export default sendMail
