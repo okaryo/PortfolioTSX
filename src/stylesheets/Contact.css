@@ -46,6 +46,10 @@
               0px 8px 10px 1px rgba(0, 0, 0, 0.14),
               0px 3px 14px 2px rgba(0,0,0,.12);
 }
+.contact_error {
+  font-size: 16px;
+  color: #ff0000;
+}
 
 @media (max-width: 720px) {
   .contact_button {
