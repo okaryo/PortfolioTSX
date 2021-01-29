@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Law",
+    "learningLebel": 50
+  },
+  {
+    "name": "Computer Science",
+    "learningLebel": 30
+  },
+  {
+    "name": "Algorithm",
+    "learningLebel": 30
+  },
+  {
+    "name": "Mathematics",
+    "learningLebel": 30
+  },
+  {
+    "name": "Statistics",
+    "learningLebel": 20
+  }
+]
