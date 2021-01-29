@@ -33,7 +33,7 @@ export const ProgrammingSkillBars = [
   },
   {
     name: 'C++',
-    progressWidth: { width: '30%' }
+    progressWidth: { width: '10%' }
   },
   {
     name: 'Go',
@@ -41,11 +41,11 @@ export const ProgrammingSkillBars = [
   },
   {
     name: 'Dart',
-    progressWidth: { width: '0.2%' }
+    progressWidth: { width: '30%' }
   },
   {
     name: 'Flutter',
-    progressWidth: { width: '0.2%' }
+    progressWidth: { width: '25%' }
   }
 ]
 
@@ -56,18 +56,18 @@ export const OtherSkillBars = [
   },
   {
     name: 'Computer Science',
-    progressWidth: { width: '40%' }
+    progressWidth: { width: '30%' }
   },
   {
     name: 'Algorithm',
-    progressWidth: { width: '40%' }
+    progressWidth: { width: '30%' }
   },
   {
     name: 'Mathematics',
-    progressWidth: { width: '40%' }
+    progressWidth: { width: '30%' }
   },
   {
     name: 'Statistics',
-    progressWidth: { width: '30%' }
+    progressWidth: { width: '20%' }
   }
 ]
