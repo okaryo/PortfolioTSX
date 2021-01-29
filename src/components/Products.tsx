@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { dateFormatter } from '../utils/dateFormatter'
 import {
   CLOSED_BUTTON_COLOR,
   PRIMARY_BUTTON_COLOR,
   GITHUB_BUTTON_COLOR
 } from '../constants/Colors'
+import productsData from '../data/products.json'
 
 type Products = {
   name: string,
@@ -37,12 +38,7 @@ type ButtonProps = {
 
 const Products = () => {
   const ProductList = () => {
-    const [products, setProducts] = useState([] as Products[])
-    useEffect(() => {
-      fetch('products.json')
-        .then(response => response.json())
-        .then(data => setProducts(data))
-    }, [])
+    const products: Products[] = productsData
 
     const ButtonList: React.FC<ButtonListProps> = (props) => {
       const { links, status } = props.buttonListProps
