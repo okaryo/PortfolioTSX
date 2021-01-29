@@ -6,7 +6,7 @@ const Footer = () => {
   return(
     <footer className="footer_container">
       <FooterNavigationList navigationItems={FooterNavigationItems} />
-      <p className="footer_copyright">Copyright &copy;2020 OKARYO</p>
+      <p className="footer_copyright">Copyright &copy;2021 OKARYO</p>
       <p className="footer_noteAboutGA">This site uses Google Analytics.</p>
     </footer>
   )
