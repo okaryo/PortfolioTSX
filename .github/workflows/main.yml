@@ -3,7 +3,7 @@ name: Build and Deploy
 on: 
   push:
     branches: 
-      - master
+      - main
 
 jobs:
   build_firebase_hosting:
@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: npm install
       run: npm install
     - name: build
       run: npm run build
     - name: persist to workspace
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       with:
         name: build firebase hosting
         path: ./build
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: download workspace
-      uses: actions/download-artifact@master
+      uses: actions/download-artifact@main
       with:
         name: build firebase hosting
         path: ./build
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: npm install
       working-directory: ./functions
       run: npm install
