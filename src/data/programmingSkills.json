@@ -46,5 +46,13 @@
   {
     "name": "Flutter",
     "learningLebel": 25
+  },
+  {
+    "name": "Kotlin",
+    "learningLebel": 0.1
+  },
+  {
+    "name": "Android",
+    "learningLebel": 0.1
   }
 ]
