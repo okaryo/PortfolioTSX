@@ -95,6 +95,7 @@ const Contact = () => {
     <div>
       <div className="headerSpace" />
       <div className="main_body contact_body">
+        <h5 style={{color: "red", marginBottom: "16px"}}>Now out of order....Sorry...</h5>
         <h3 className="contact_mainHeader">Feel free to contact me!</h3>
 
         <label className="contact_inputLabel" htmlFor="name">Name</label>
