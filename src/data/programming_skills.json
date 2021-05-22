@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML5",
+    "learningLevel": 75
+  },
+  {
+    "name": "CSS3",
+    "learningLevel": 60
+  },
+  {
+    "name": "JavaScript",
+    "learningLevel": 60
+  },
+  {
+    "name": "TypeScript",
+    "learningLevel": 50
+  },
+  {
+    "name": "Ruby",
+    "learningLevel": 70
+  },
+  {
+    "name": "Rails",
+    "learningLevel": 70
+  },
+  {
+    "name": "React",
+    "learningLevel": 60
+  },
+  {
+    "name": "Vue",
+    "learningLevel": 30
+  },
+  {
+    "name": "Dart",
+    "learningLevel": 30
+  },
+  {
+    "name": "Flutter",
+    "learningLevel": 25
+  },
+  {
+    "name": "Kotlin",
+    "learningLevel": 30
+  },
+  {
+    "name": "Android",
+    "learningLevel": 25
+  }
+]
