@@ -1,12 +1,12 @@
 import React from 'react'
 import me from '../images/me.png'
-import ProgrammingSkills from '../data/programmingSkills.json'
-import OtherSkills from '../data/otherSkills.json'
+import ProgrammingSkills from '../data/programming_skills.json'
+import OtherSkills from '../data/other_skills.json'
 
 interface SkillBarsProps {
   skillBars: {
     name: string,
-    learningLebel: number,
+    learningLevel: number,
   }[]
 }
 
@@ -19,7 +19,7 @@ const Profile = () => {
         <div key={index} className="profile_skill_unit">
           <h5>{skillBar.name}</h5>
           <div className="profile_skill_bar">
-            <div className="profile_skill_progress" style={{width: `${skillBar.learningLebel}%`}}></div>
+            <div className="profile_skill_progress" style={{width: `${skillBar.learningLevel}%`}}></div>
             <div className="profile_skill_unprogress"></div>
             <div className="profile_skill_bar_omit-line"></div>
           </div>
