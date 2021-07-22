@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { functions } from '../firebase'
+import axios from 'axios'
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -29,20 +29,25 @@ const Contact = () => {
   const handleSubmit = (_: React.FormEvent<HTMLButtonElement>) => {
     if (isValidateInputValues()) return
 
-    const confirmSubmit = window.confirm('Send an email. Is this content correct?')
-    if (confirmSubmit) {
-      const sendMail = functions.httpsCallable('sendMail')
-      const data = {
-        name: name,
-        email: email,
-        content: content
-      }
-      sendMail(data)
-      setNameErrorText('')
-      setEmailErrorText('')
-      setContentErrorText('')
-      setAlreadySent(true)
+    const webHookUrl = process.env.REACT_APP_SLACK_WEBHOOK_URL
+    const data = {
+      'channel': 'idea',
+      'text': `
+name: ${name},
+email: ${email},
+content: ${content}`
     }
+    axios.post(
+      webHookUrl!,
+      JSON.stringify(data),
+    )
+    .then(_ => {
+        setNameErrorText('')
+        setEmailErrorText('')
+        setContentErrorText('')
+        setAlreadySent(true)
+      }
+    )
   }
 
   const isValidateInputValues = () => {
@@ -95,7 +100,6 @@ const Contact = () => {
     <div>
       <div className="headerSpace" />
       <div className="main_body contact_body">
-        <h5 style={{color: "red", marginBottom: "16px"}}>Now out of order....Sorry...</h5>
         <h3 className="contact_mainHeader">Feel free to contact me!</h3>
 
         <label className="contact_inputLabel" htmlFor="name">Name</label>
