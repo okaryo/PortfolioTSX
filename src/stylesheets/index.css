@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PixelMplus10';
-  src: url('./PixelMplus10.woff') format('woff');
+  src: url('./PixelMplus10.woff2') format('woff2');
 }
 * {
   box-sizing: border-box;
