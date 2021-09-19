@@ -1,0 +1,26 @@
+[
+  {
+    "name": "The University of Tokyo, Faculty of Law",
+    "description": "DepartmentⅠ: General Legal Studies Course",
+    "from": "2018-04-01",
+    "to": "2021-09-24"
+  },
+  {
+    "name": "Taking a year off from university",
+    "description": "Lost the meaning of life",
+    "from": "2017-04-01",
+    "to": "2018-03-31"
+  },
+  {
+    "name": "The University of Tokyo, Faculty of Arts and Sciences",
+    "description": "Human Sciences Ⅰ",
+    "from": "2015-04-01",
+    "to": "2017-03-31"
+  },
+  {
+    "name": "SUNDAI Ochanomizu3 LB→LA",
+    "description": "Ronin",
+    "from": "2014-04-01",
+    "to": "2015-03-31"
+  }
+]

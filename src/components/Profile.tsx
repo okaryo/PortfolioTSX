@@ -1,5 +1,9 @@
 import React from 'react'
 import me from '../images/me.png'
+import { dateFormatter } from '../utils/dateFormatter'
+import Experiences from '../data/experiences.json'
+import Educations from '../data/educations.json'
+import Qualifications from '../data/qualifications.json'
 import ProgrammingSkills from '../data/programming_skills.json'
 import OtherSkills from '../data/other_skills.json'
 
@@ -42,7 +46,7 @@ const Profile = () => {
           <img className="profile_aboutMe-image" src={me} alt="my icon" height="88" width="90" loading="lazy"/>
           <div>
             <h2 className="profile_aboutMe-name">OKARYO / Ryotaro Oka</h2>
-            <p className="profile_aboutMe-job">Web Engineer</p>
+            <p className="profile_aboutMe-job">Web/Mobile Engineer</p>
             <p className="profile_aboutMe-comment">
               I love making things. I want to become a person who can create things that expand people's perspectives and choices.
             </p>
@@ -52,31 +56,38 @@ const Profile = () => {
           <section className="profile_history">
             <h3>Experience</h3>
             <ul>
-              <li>Clueit (Apr. 2020 - present)</li>
-              <li className="profile_list_sub">Web engineer</li>
-              <li>Clueit (Aug. 2019 - Mar. 2020)</li>
-              <li className="profile_list_sub">Web engineer internship</li>
-              <li>cram school teacher (May 2018 - Mar. 2019)</li>
-              <li className="profile_list_sub">part time job</li>
-              <li>baker (May 2015 - Feb. 2017)</li>
-              <li className="profile_list_sub">part time job</li>
+              {
+                Experiences.map((experience) => {
+                  const date = `${dateFormatter(experience.from)} - ${dateFormatter(experience.to)}`
+                  return <ol>
+                    <li>{experience.name} ({date})</li>
+                    <li className="profile_list_sub">{experience.description}</li>
+                  </ol>
+                })
+              }
             </ul>
             <h3>Education</h3>
             <ul>
-              <li>The University of Tokyo, Faculty of Law (Apr. 2018 - present)</li>
-              <li className="profile_list_sub">DepartmentⅠ: General Legal Studies Course</li>
-              <li>Taking a year off from university (Apr. 2017 - Mar. 2018)</li>
-              <li className="profile_list_sub">Lost the meaning of life</li>
-              <li>The University of Tokyo, Faculty of Arts and Sciences (Apr. 2015 - Mar. 2017)</li>
-              <li className="profile_list_sub">Human Sciences Ⅰ</li>
-              <li>SUNDAI Ochanomizu3 LB→LA (Apr. 2014 - Mar. 2015)</li>
-              <li className="profile_list_sub">Ronin</li>
+              {
+                Educations.map((education) => {
+                  const date = `${dateFormatter(education.from)} - ${dateFormatter(education.to)}`
+                  return <ol>
+                    <li>{education.name} ({date})</li>
+                    <li className="profile_list_sub">{education.description}</li>
+                  </ol>
+                })
+              }
             </ul>
             <h3>Qualification</h3>
             <ul>
-              <li>Statistical Society Certificate Grade 3 (Feb. 2020)</li>
-              <li className="profile_list_sub">Pass with credit</li>
-              <li>Fundamental Information Technology Engineer (Nov. 2019)</li>
+              {
+                Qualifications.map((qualification) => {
+                  return <ol>
+                    <li>{qualification.name} ({dateFormatter(qualification.date)})</li>
+                    <li className="profile_list_sub">{qualification.description}</li>
+                  </ol>
+                })
+              }
             </ul>
           </section>
 
