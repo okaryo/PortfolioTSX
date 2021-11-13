@@ -1,5 +1,22 @@
 [
   {
+    "name": "lazy_load_indexed_stack",
+    "date": "2021-11-09",
+    "image": "https://okaryo.github.io/api/images/portfolio/products/lazy_load_indexed_stack.png",
+    "description": "This is my first Flutter package. By using this, you can IndexedStack that can lazy load.",
+    "links": [
+      {
+        "type": "site",
+        "link": "https://pub.dev/packages/lazy_load_indexed_stack"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/okaryo/lazy_load_indexed_stack"
+      }
+    ],
+    "status": "active"
+  },
+  {
     "name": "okaryo.log",
     "date": "2020-08-15",
     "image": "https://okaryo.github.io/api/images/portfolio/products/okaryo.log.png",
