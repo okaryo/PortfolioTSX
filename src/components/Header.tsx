@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { initialHeaderState } from '../states/InitialHeaderState'
-import externalLinkIcon from '../images/external_link_icon.png'
+import externalLinkIcon from '../assets/images/external_link_icon.png'
 
 type HeaderProps = {
   activePage: string

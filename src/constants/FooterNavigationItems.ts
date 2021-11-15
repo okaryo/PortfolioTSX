@@ -20,6 +20,10 @@ export const FooterNavigationItems = [
     link: 'https://qiita.com/okaryo'
   },
   {
+    name: 'connpass',
+    link: 'https://connpass.com/user/okaryo/'
+  },
+  {
     name: 'AtCoder',
     link: 'https://atcoder.jp/users/okaryo'
   },
