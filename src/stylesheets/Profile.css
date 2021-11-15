@@ -57,10 +57,8 @@
 .profile_skill_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.profile_skill_container:first-of-type {
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 .profile_skill_unit {
   width: 48%;
