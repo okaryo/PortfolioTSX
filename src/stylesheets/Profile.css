@@ -94,6 +94,24 @@
   border-right: 1px dotted #AAAAAA;
   z-index: 3;
 }
+.profile_githubContributions img {
+  width: 100%;
+}
+.profile_githubContributions img:hover {
+  opacity: 0.7;
+}
+.profile_githubContributions_note {
+  text-align: right;
+  font-size: 14px;
+  color: #757575;
+}
+.profile_githubContributions_note a {
+  font-size: 14px;
+  color: #757575;
+}
+.profile_githubContributions_note a:hover {
+  color: #61d800;
+}
 
 @media (max-width: 720px) {
   .profile_detail {
