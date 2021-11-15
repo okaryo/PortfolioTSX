@@ -1,5 +1,5 @@
 import React from 'react'
-import me from '../images/me.png'
+import me from '../assets/images/me.png'
 import twitterLogo from '../assets/logos/twitter_logo.svg'
 import githubLogo from '../assets/logos/github_logo.svg'
 import qiitaLogo from '../assets/logos/qiita_logo.png'
