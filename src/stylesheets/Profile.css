@@ -19,6 +19,13 @@
   margin-top: 5px;
   max-width: 450px;
 }
+.profile_aboutMe-snsIcons {
+  display: flex;
+  margin-top: 12px;
+}
+.profile_aboutMe-snsIcons li + li {
+  margin-left: 16px;
+}
 .profile_detail {
   margin-top: 30px;
   display: flex;

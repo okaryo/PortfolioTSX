@@ -1,5 +1,9 @@
 import React from 'react'
 import me from '../images/me.png'
+import twitterLogo from '../assets/logos/twitter_logo.svg'
+import githubLogo from '../assets/logos/github_logo.svg'
+import qiitaLogo from '../assets/logos/qiita_logo.png'
+import connpassLogo from '../assets/logos/connpass_logo.svg'
 import { dateFormatter } from '../utils/dateFormatter'
 import Experiences from '../data/experiences.json'
 import Educations from '../data/educations.json'
@@ -50,6 +54,28 @@ const Profile = () => {
             <p className="profile_aboutMe-comment">
               I love making things. I want to become a person who can create things that expand people's perspectives and choices.
             </p>
+            <ul className="profile_aboutMe-snsIcons">
+              <li>
+                <a href="https://twitter.com/okaryo_tr" target="_blank" rel="noopener noreferrer">
+                  <img src={twitterLogo} alt="twitter logo" height="25" width="25" loading="lazy" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/okaryo" target="_blank" rel="noopener noreferrer">
+                  <img src={githubLogo} alt="github logo" height="25" width="25" loading="lazy" />
+                </a>
+              </li>
+              <li>
+                <a href="https://qiita.com/okaryo" target="_blank" rel="noopener noreferrer">
+                  <img src={qiitaLogo} alt="qiita logo" height="25" width="25" loading="lazy" />
+                </a>
+              </li>
+              <li>
+                <a href="https://connpass.com/user/okaryo/" target="_blank" rel="noopener noreferrer">
+                  <img src={connpassLogo} alt="connpass logo" height="25" width="25" loading="lazy" />
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <div className="profile_detail">
