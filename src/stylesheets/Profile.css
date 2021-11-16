@@ -23,8 +23,15 @@
   display: flex;
   margin-top: 12px;
 }
+.profile_aboutMe-snsIcons li {
+  display: flex;
+}
 .profile_aboutMe-snsIcons li + li {
   margin-left: 16px;
+}
+.profile_aboutMe-snsIcons a {
+  display: flex;
+  align-items: center;
 }
 .profile_detail {
   margin-top: 30px;

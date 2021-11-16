@@ -77,8 +77,8 @@ const Profile = () => {
                 </a>
               </li>
               <li>
-                <a href="https://bookmeter.com/users/739784" target="_blank" rel="noopener noreferrer">
-                  <img src={bookmeterLogo} alt="bookmeter logo" height="25" width="25" loading="lazy" />
+                <a className="profile_snsIcon-bookmeter" href="https://bookmeter.com/users/739784" target="_blank" rel="noopener noreferrer">
+                  <img src={bookmeterLogo} alt="bookmeter logo" height="21" width="21" loading="lazy" />
                 </a>
               </li>
             </ul>
