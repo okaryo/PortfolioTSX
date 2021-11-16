@@ -4,6 +4,7 @@ import twitterLogo from '../assets/logos/twitter_logo.svg'
 import githubLogo from '../assets/logos/github_logo.svg'
 import qiitaLogo from '../assets/logos/qiita_logo.png'
 import connpassLogo from '../assets/logos/connpass_logo.svg'
+import bookmeterLogo from '../assets/logos/bookmeter_logo.png'
 import { dateFormatter } from '../utils/dateFormatter'
 import Experiences from '../data/experiences.json'
 import Educations from '../data/educations.json'
@@ -73,6 +74,11 @@ const Profile = () => {
               <li>
                 <a href="https://connpass.com/user/okaryo/" target="_blank" rel="noopener noreferrer">
                   <img src={connpassLogo} alt="connpass logo" height="25" width="25" loading="lazy" />
+                </a>
+              </li>
+              <li>
+                <a href="https://bookmeter.com/users/739784" target="_blank" rel="noopener noreferrer">
+                  <img src={bookmeterLogo} alt="bookmeter logo" height="25" width="25" loading="lazy" />
                 </a>
               </li>
             </ul>
