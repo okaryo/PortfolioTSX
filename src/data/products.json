@@ -1,9 +1,22 @@
 [
   {
+    "name": "BookMeterRecordScraping",
+    "date": "2021-11-26",
+    "image": "https://okaryo.github.io/api/images/portfolio/products/bookmeter_record_scraping.png",
+    "description": "You can generate reading records in JSON format from BookMeter!",
+    "links": [
+      {
+        "type": "github",
+        "link": "https://github.com/okaryo/BookMeterRecordScraping"
+      }
+    ],
+    "status": "active"
+  },
+  {
     "name": "lazy_load_indexed_stack",
     "date": "2021-11-09",
     "image": "https://okaryo.github.io/api/images/portfolio/products/lazy_load_indexed_stack.png",
-    "description": "This is my first Flutter package. By using this, you can IndexedStack that can lazy load.",
+    "description": "This is my first Flutter package! By using this, you can IndexedStack that can lazy load.",
     "links": [
       {
         "type": "site",
