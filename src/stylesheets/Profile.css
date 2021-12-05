@@ -29,6 +29,9 @@
 .profile_aboutMe-snsIcons li + li {
   margin-left: 16px;
 }
+.profile_aboutMe-snsIcons li:hover {
+  opacity: 0.7;
+}
 .profile_aboutMe-snsIcons a {
   display: flex;
   align-items: center;
