@@ -1,7 +1,7 @@
 export const FooterNavigationItems = [
   {
     name: 'Twitter',
-    link: 'https://twitter.com/okaryo_tr'
+    link: 'https://twitter.com/okaryoX'
   },
   {
     name: 'Github',

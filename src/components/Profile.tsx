@@ -57,7 +57,7 @@ const Profile = () => {
             </p>
             <ul className="profile_aboutMe-snsIcons">
               <li>
-                <a href="https://twitter.com/okaryo_tr" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/okaryoX" target="_blank" rel="noopener noreferrer">
                   <img src={twitterLogo} alt="twitter logo" height="25" width="25" loading="lazy" />
                 </a>
               </li>
