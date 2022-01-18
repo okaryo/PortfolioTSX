@@ -10,7 +10,6 @@ import Experiences from '../data/experiences.json'
 import Educations from '../data/educations.json'
 import Qualifications from '../data/qualifications.json'
 import ProgrammingSkills from '../data/programming_skills.json'
-import OtherSkills from '../data/other_skills.json'
 
 interface SkillBarsProps {
   skillBars: {
@@ -127,10 +126,6 @@ const Profile = () => {
             <h3>Programming Skill</h3>
             <Skills
               skillBars={ProgrammingSkills}
-            />
-            <h3>Other Skill</h3>
-            <Skills
-              skillBars={OtherSkills}
             />
             <h3>Github Contribution</h3>
             <section className="profile_githubContributions">
