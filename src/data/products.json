@@ -71,7 +71,7 @@
       },
       {
         "type": "github",
-        "link": "https://github.com/okaryo/ChromeExtension/tree/master/AtCoderLanguageCleaner"
+        "link": "https://github.com/okaryo/AtCoderLanguageCleaner"
       }
     ],
     "status": "active"
@@ -105,7 +105,7 @@
       },
       {
         "type": "github",
-        "link": "https://github.com/okaryo/ChromeExtension/tree/master/NewTabLinkGitHub"
+        "link": "https://github.com/okaryo/NewTabLinkGitHub"
       }
     ],
     "status": "active"
@@ -137,7 +137,7 @@
     "status": "active"
   },
   {
-    "name": "Flex Properties Demo",
+    "name": "FlexPropertiesDemo",
     "date": "2020-03-20",
     "image": "https://okaryo.github.io/api/images/portfolio/products/flex_properties_demo.png",
     "description": "With this chrome extension, you can try flex-box property easily!",
@@ -148,7 +148,7 @@
       },
       {
         "type": "github",
-        "link": "https://github.com/okaryo/ChromeExtension/tree/master/FlexPropertiesDemo"
+        "link": "https://github.com/okaryo/FlexPropertiesDemo"
       }
     ],
     "status": "active"
@@ -165,7 +165,7 @@
       },
       {
         "type": "github",
-        "link": "https://github.com/okaryo/ChromeExtension/tree/master/TabTabTab"
+        "link": "https://github.com/okaryo/TabTabTab"
       }
     ],
     "status": "active"
