@@ -90,7 +90,7 @@ const Profile = () => {
               {
                 Experiences.map((experience) => {
                   const date = `${dateFormatter(experience.from)} - ${dateFormatter(experience.to)}`
-                  return <ol>
+                  return <ol key={`${experience.name} ${date}`}>
                     <li>{experience.name} ({date})</li>
                     <li className="profile_list_sub">{experience.description}</li>
                   </ol>
@@ -102,7 +102,7 @@ const Profile = () => {
               {
                 Educations.map((education) => {
                   const date = `${dateFormatter(education.from)} - ${dateFormatter(education.to)}`
-                  return <ol>
+                  return <ol key={`${education.name} ${date}`}>
                     <li>{education.name} ({date})</li>
                     <li className="profile_list_sub">{education.description}</li>
                   </ol>
@@ -113,7 +113,7 @@ const Profile = () => {
             <ul>
               {
                 Qualifications.map((qualification) => {
-                  return <ol>
+                  return <ol key={qualification.name}>
                     <li>{qualification.name} ({dateFormatter(qualification.date)})</li>
                     <li className="profile_list_sub">{qualification.description}</li>
                   </ol>

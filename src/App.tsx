@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route
 } from 'react-router-dom'
 
@@ -13,15 +13,15 @@ import NotFoundPage from './pages/NotFoundPage'
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={ProductsPage} />
-        <Route exact path="/products" component={ProductsPage} />
-        <Route exact path="/profile" component={ProfilePage} />
-        <Route exact path="/contact" component={ContactPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<ProductsPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route element={<NotFoundPage />} />
+      </Routes>
     </Router>
   )
 }
 
-export default App;
+export default App
