@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSubmit = (_: React.FormEvent<HTMLButtonElement>) => {
     if (isValidateInputValues()) return
 
-    const webHookUrl = process.env.REACT_APP_SLACK_WEBHOOK_URL
+    const webHookUrl = import.meta.env.VITE_SLACK_WEBHOOK_URL
     const data = {
       'channel': 'idea',
       'text': `
@@ -38,7 +38,7 @@ email: ${email},
 content: ${content}`
     }
     axios.post(
-      webHookUrl!,
+      webHookUrl,
       JSON.stringify(data),
     )
     .then(_ => {
