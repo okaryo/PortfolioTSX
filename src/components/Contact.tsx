@@ -5,6 +5,7 @@ const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [content, setContent] = useState('')
+  const [requestErrorText, setRequestErrorText] = useState('')
   const [nameErrorText, setNameErrorText] = useState('')
   const [emailErrorText, setEmailErrorText] = useState('')
   const [contentErrorText, setContentErrorText] = useState('')
@@ -42,12 +43,15 @@ content: ${content}`
       JSON.stringify(data),
     )
     .then(_ => {
+        setRequestErrorText('')
         setNameErrorText('')
         setEmailErrorText('')
         setContentErrorText('')
         setAlreadySent(true)
       }
-    )
+    ).catch(_ => {
+      setRequestErrorText('Error Occurred!')
+    })
   }
 
   const isValidateInputValues = () => {
@@ -101,6 +105,7 @@ content: ${content}`
       <div className="headerSpace" />
       <div className="main_body contact_body">
         <h3 className="contact_mainHeader">Feel free to contact me!</h3>
+        <p className="contact_error">{requestErrorText}</p>
 
         <label className="contact_inputLabel" htmlFor="name">Name</label>
         <input id="name" name="name" className="contact_inputArea" type="text" value={name} onChange={handleChange} />
