@@ -1,5 +1,22 @@
 [
   {
+    "name": "OKARYO BOOKSHELF",
+    "date": "2022-04-03",
+    "image": "https://okaryo.github.io/api/images/portfolio/products/book.okaryo.io.png",
+    "description": "Books that okaryo has read so far! okaryo is composed of 70% water and 30% books.",
+    "links": [
+      {
+        "type": "site",
+        "link": "https://book.okaryo.io"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/okaryo/book.okaryo.io"
+      }
+    ],
+    "status": "active"
+  },
+  {
     "name": "JsonConverter",
     "date": "2022-03-20",
     "image": "https://okaryo.github.io/api/images/portfolio/products/json_converter.png",
