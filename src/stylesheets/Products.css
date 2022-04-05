@@ -13,24 +13,17 @@
   border-radius: 3px;
 }
 .product_card_image_continer {
-  position: relative;
-  min-height: 160px;
   overflow: hidden;
   border-radius: 3px 3px 0 0;
 }
 .product_card_image_continer img {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
   width: 100%;
-  height: auto;
 }
 .product_card_text_container {
   padding: 10px;
+  border-top: 1px solid #e8eaed;
 }
 .product_card_text_container h3 {
   display: inline-block;
