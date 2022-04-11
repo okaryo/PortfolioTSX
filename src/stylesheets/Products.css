@@ -17,6 +17,7 @@
   border-radius: 3px 3px 0 0;
 }
 .product_card_image_continer img {
+  display: block;
   aspect-ratio: 3/2;
   object-fit: contain;
   width: 100%;
