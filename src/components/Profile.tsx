@@ -5,6 +5,7 @@ import githubLogo from '../assets/logos/github_logo.svg'
 import qiitaLogo from '../assets/logos/qiita_logo.png'
 import connpassLogo from '../assets/logos/connpass_logo.svg'
 import bookmeterLogo from '../assets/logos/bookmeter_logo.png'
+import suzuriLogo from '../assets/logos/suzuri_logo.svg'
 import { dateFormatter } from '../utils/dateFormatter'
 import Experiences from '../data/experiences.json'
 import Educations from '../data/educations.json'
@@ -76,8 +77,13 @@ const Profile = () => {
                 </a>
               </li>
               <li>
-                <a className="profile_snsIcon-bookmeter" href="https://bookmeter.com/users/739784" target="_blank" rel="noopener noreferrer">
+                <a href="https://bookmeter.com/users/739784" target="_blank" rel="noopener noreferrer">
                   <img src={bookmeterLogo} alt="bookmeter logo" height="21" width="21" loading="lazy" />
+                </a>
+              </li>
+              <li>
+                <a href="https://suzuri.jp/okaryo" target="_blank" rel="noopener noreferrer">
+                  <img src={suzuriLogo} alt="suzuri logo" height="25" width="25" loading="lazy" />
                 </a>
               </li>
             </ul>
