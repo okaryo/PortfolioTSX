@@ -12,8 +12,16 @@ export const FooterNavigationItems = [
     link: 'https://blog.okaryo.io'
   },
   {
+    name: 'Goods',
+    link: 'https://suzuri.jp/okaryo'
+  },
+  {
     name: 'Bookmeter',
     link: 'https://bookmeter.com/users/739784'
+  },
+  {
+    name: 'Bookshelf',
+    link: 'https://book.okaryo.io'
   },
   {
     name: 'Qiita',
