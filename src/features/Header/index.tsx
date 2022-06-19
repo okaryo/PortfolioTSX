@@ -4,6 +4,7 @@ import Navigation from './components/Navigations'
 
 const Container = styled.header`
   position: fixed;
+  top: 0;
   display: flex;
   height: 48px;
   width: 100%;
