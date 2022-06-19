@@ -7,7 +7,6 @@ import './stylesheets/Products.css'
 import './stylesheets/Profile.css'
 import './stylesheets/Contact.css'
 import './stylesheets/NotFound.css'
-import './stylesheets/Header.css'
 
 ReactDOM.render(
   <React.StrictMode>
