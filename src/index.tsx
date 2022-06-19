@@ -6,7 +6,6 @@ import App from './App'
 import './stylesheets/Products.css'
 import './stylesheets/Profile.css'
 import './stylesheets/Contact.css'
-import './stylesheets/NotFound.css'
 
 ReactDOM.render(
   <React.StrictMode>

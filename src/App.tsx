@@ -8,7 +8,7 @@ import {
 import ProductsPage from './pages/ProductsPage'
 import ProfilePage from './pages/ProfilePage'
 import ContactPage from './pages/ContactPage'
-import NotFoundPage from './pages/NotFoundPage'
+import NotFoundPage from './features/NotFound'
 
 const App = () => {
   return (
