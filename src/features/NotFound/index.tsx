@@ -1,7 +1,6 @@
-import Header from '../../features/Header'
-import Footer from '../../features/Footer'
 import notFoundImage from './assets/not_found.png'
 import styled from '@emotion/styled'
+import PageContainer from '../../components/PageContainer'
 
 const Container = styled.div`
   display: flex;
@@ -16,22 +15,15 @@ const ContentHeader = styled.h2`
   font-size: 48px;
 `
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return(
-    <div>
-      <Header />
-      <div>
-        <div className="headerSpace" />
-        <section className="main_body notFound_body">
-          <Container>
-            <ContentHeader className="notFound_header">Not Found</ContentHeader>
-            <img src={notFoundImage} height="240" width="240" alt="Not Found" loading="lazy" />
-          </Container>
-        </section>
-      </div>
-      <Footer />
-    </div>
+    <PageContainer>
+      <Container>
+        <ContentHeader className="notFound_header">Not Found</ContentHeader>
+        <img src={notFoundImage} height="240" width="240" alt="Not Found" loading="lazy" />
+      </Container>
+    </PageContainer>
   )
 }
 
-export default NotFoundPage
+export default NotFound
