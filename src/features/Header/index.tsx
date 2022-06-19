@@ -2,10 +2,6 @@ import styled from '@emotion/styled'
 import Title from './components/Title'
 import Navigation from './components/Navigations'
 
-type HeaderProps = {
-  activePage: string
-}
-
 const Container = styled.header`
   position: fixed;
   display: flex;
@@ -24,11 +20,11 @@ const Container = styled.header`
   }
 `
 
-const Header = (props: HeaderProps) => {
+const Header = () => {
   return(
     <Container>
       <Title />
-      <Navigation activePage={props.activePage} />
+      <Navigation />
     </Container>
   )
 }

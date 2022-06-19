@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../features/Header'
 import Products from '../components/Products'
 import Footer from '../features/Footer'
@@ -6,7 +5,7 @@ import Footer from '../features/Footer'
 const ProductPage = () => {
   return(
     <div>
-      <Header activePage={'products'} />
+      <Header />
       <Products />
       <Footer />
     </div>

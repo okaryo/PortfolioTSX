@@ -1,13 +1,6 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { initialHeaderState } from '../../../states/InitialHeaderState'
 import styled from '@emotion/styled'
 import PageNavigation from './PageNavigation'
 import BlogNavigation from './BlogNavigation'
-
-type NavigationsProps = {
-  activePage: string
-}
 
 const Container = styled.nav`
   flex: 1 0 auto;
@@ -30,29 +23,27 @@ const NavigationContainer = styled.ul`
   }
 `
 
-const Navigations = (props: NavigationsProps) => {
-  const { activePage } = props
-
-  const [states, setStates] = useState(initialHeaderState)
-  useEffect(() => {
-    setStates({
-      ...states,
-      [activePage]: {
-        title: activePage.toUpperCase(),
-        to: `/${activePage}`,
-        isActive: true
-      }
-    })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  const NavigationList = Object.values(states).map((value) => {
+const Navigations = () => {
+  const navigations = [
+    {
+      'title': 'PRODUCTS',
+      'link': '/products'
+    },
+    {
+      'title': 'PROFILE',
+      'link': '/profile'
+    },
+    {
+      'title': 'CONTACT',
+      'link': '/contact'
+    }
+  ]
+  const Navigations = Object.values(navigations).map((value) => {
     return (
       <PageNavigation
         key={value.title}
-        isActive={value.isActive}
         title={value.title}
-        link={value.to}
+        link={value.link}
       />
     )
   })
@@ -60,7 +51,7 @@ const Navigations = (props: NavigationsProps) => {
   return(
     <Container>
       <NavigationContainer>
-        {NavigationList}
+        {Navigations}
         <BlogNavigation />
       </NavigationContainer>
     </Container>

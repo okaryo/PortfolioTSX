@@ -19,7 +19,7 @@ const ContentHeader = styled.h2`
 const NotFoundPage = () => {
   return(
     <div>
-      <Header activePage={'products'} />
+      <Header />
       <div>
         <div className="headerSpace" />
         <section className="main_body notFound_body">
