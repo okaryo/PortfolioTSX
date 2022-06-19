@@ -11,17 +11,58 @@ const Container = styled.section`
   display: flex;
 `
 
+const MeImage = styled.img`
+  border: solid 1px #dcdddd;
+  margin-right: 22px;
+`
+
+const MeName = styled.h2`
+  font-size: 20px;
+`
+
+const MeJob = styled.p`
+  font-size: 14px;
+`
+
+const MeComment = styled.p`
+  display: inline-block;
+  margin-top: 5px;
+  max-width: 450px;
+`
+
+const SNSIcons = styled.ul`
+  display: flex;
+  margin-top: 12px;
+
+  li {
+    display: flex;
+  }
+
+  li:hover {
+    opacity: 0.7;
+  }
+
+  li + li {
+    margin-left: 16px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+`
+
 const AboutMe = () => {
   return (
     <Container>
-      <img className="profile_aboutMe-image" src={me} alt="my icon" height="88" width="90" loading="lazy"/>
+      <MeImage src={me} alt="my icon" height="88" width="90" loading="lazy" />
       <div>
-        <h2 className="profile_aboutMe-name">OKARYO / Ryotaro Oka</h2>
-        <p className="profile_aboutMe-job">Web/Mobile Engineer</p>
-        <p className="profile_aboutMe-comment">
+        <MeName>OKARYO / Ryotaro Oka</MeName>
+        <MeJob>Web/Mobile Engineer</MeJob>
+        <MeComment>
           I love making things. I want to become a person who can create things that expand people's perspectives and choices.
-        </p>
-        <ul className="profile_aboutMe-snsIcons">
+        </MeComment>
+        <SNSIcons>
           <li>
             <a href="https://twitter.com/okaryoX" target="_blank" rel="noopener noreferrer">
               <img src={twitterLogo} alt="twitter logo" height="25" width="25" loading="lazy" />
@@ -52,7 +93,7 @@ const AboutMe = () => {
               <img src={suzuriLogo} alt="suzuri logo" height="25" width="25" loading="lazy" />
             </a>
           </li>
-        </ul>
+        </SNSIcons>
         </div>
       </Container>
   )
