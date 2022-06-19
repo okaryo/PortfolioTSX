@@ -6,7 +6,7 @@ import {
 
 import ProductsPage from './pages/ProductsPage'
 import ProfilePage from './pages/ProfilePage'
-import ContactPage from './pages/ContactPage'
+import ContactPage from './features/Contact'
 import NotFoundPage from './features/NotFound'
 import Header from './features/Header'
 import Footer from './features/Footer'

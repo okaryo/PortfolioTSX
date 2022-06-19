@@ -1,5 +1,71 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import PageContainer from '../../components/PageContainer'
+import styled from '@emotion/styled'
+import { css } from '@emotion/react'
+
+const Body = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`
+
+const PageHeader = styled.h3`
+  font-size: 20px;
+`
+
+const FormLabel = styled.label`
+  display: inline-block;
+  margin: 20px 0 4px;
+  font-size: 18px;
+`
+
+const InputFieldStyle = css`
+  width: 100%;
+  border: 1px solid #d8dadf;
+  padding: 10px;
+  color: #57575f;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+`
+
+const InputField = styled.input`${InputFieldStyle}`
+
+const TextAreaField = styled.textarea`${InputFieldStyle}`
+
+const FormError = styled.p`
+  font-size: 16px;
+  color: #ff0000;
+`
+
+const SubmitButton = styled.button`
+  margin-top: 16px;
+  height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #61d800;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  padding: 0 16px;
+
+  &:hover, &:focus {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 10px 0px rgba(0,0,0,.12);
+  }
+
+  &:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0px 3px 14px 2px rgba(0,0,0,.12);
+  }
+`
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -101,29 +167,28 @@ content: ${content}`
   }
 
   return(
-    <div>
-      <div className="headerSpace" />
-      <div className="main_body contact_body">
-        <h3 className="contact_mainHeader">Feel free to contact me!</h3>
-        <p className="contact_error">{requestErrorText}</p>
+    <PageContainer>
+      <Body>
+        <PageHeader>Feel free to contact me!</PageHeader>
+        <FormError>{requestErrorText}</FormError>
 
-        <label className="contact_inputLabel" htmlFor="name">Name</label>
-        <input id="name" name="name" className="contact_inputArea" type="text" value={name} onChange={handleChange} />
-        <p className="contact_error">{nameErrorText}</p>
+        <FormLabel htmlFor='name'>Name</FormLabel>
+        <InputField id='name' name='name' type="text" value={name} onChange={handleChange} />
+        <FormError>{nameErrorText}</FormError>
 
-        <label className="contact_inputLabel" htmlFor="email">E-mail</label>
-        <input id="email" name="email" className="contact_inputArea" type="text" value={email} onChange={handleChange} />
-        <p className="contact_error">{emailErrorText}</p>
+        <FormLabel htmlFor="email">E-mail</FormLabel>
+        <InputField id="email" name="email" type="text" value={email} onChange={handleChange} />
+        <FormError>{emailErrorText}</FormError>
 
-        <label className="contact_inputLabel" htmlFor="content">Content</label>
-        <textarea id="content" name="content" className="contact_inputArea" rows={10} value={content} onChange={handleChange} ></textarea>
-        <p className="contact_error">{contentErrorText}</p>
+        <FormLabel htmlFor="content">Content</FormLabel>
+        <TextAreaField id="content" name="content" rows={10} value={content} onChange={handleChange} ></TextAreaField>
+        <FormError>{contentErrorText}</FormError>
 
-        <button className="contact_button" type="submit" onClick={handleSubmit} disabled={alreadySent} >
+        <SubmitButton type="submit" onClick={handleSubmit} disabled={alreadySent} >
           {alreadySent ? 'Successfully Sent': 'Send'}
-        </button>
-      </div>
-    </div>
+        </SubmitButton>
+      </Body>
+    </PageContainer>
   )
 }
 
