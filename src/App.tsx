@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 
 import ProductsPage from './pages/ProductsPage'
-import ProfilePage from './pages/ProfilePage'
+import ProfilePage from './features/Profile'
 import ContactPage from './features/Contact'
 import NotFoundPage from './features/NotFound'
 import Header from './features/Header'
