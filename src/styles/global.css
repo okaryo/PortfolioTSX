@@ -16,23 +16,3 @@ a {
 li {
   list-style: none;
 }
-
-.headerSpace {
-  height: 48px;
-}
-
-.main_body {
-  padding: 30px 24px 30px;
-  min-height: calc(100vh - 178px);
-}
-
-@media (max-width: 720px) {
-  .headerSpace {
-    height: 96px;
-  }
-
-  .main_body {
-    padding: 20px 16px 30px;
-    min-height: calc(100vh - 254px);
-  }
-}

@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 
-import ProductsPage from './pages/ProductsPage'
+import ProductsPage from './features/Products'
 import ProfilePage from './features/Profile'
 import ContactPage from './features/Contact'
 import NotFoundPage from './features/NotFound'

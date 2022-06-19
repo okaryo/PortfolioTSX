@@ -1,11 +1,12 @@
 import React from 'react'
-import { dateFormatter } from '../utils/dateFormatter'
+import PageContainer from '../../components/PageContainer'
+import { dateFormatter } from '../../utils/dateFormatter'
 import {
   CLOSED_BUTTON_COLOR,
   PRIMARY_BUTTON_COLOR,
   GITHUB_BUTTON_COLOR
-} from '../constants/Colors'
-import productsData from '../data/products.json'
+} from './constants/Colors'
+import productsData from './data/products.json'
 
 type Products = {
   name: string,
@@ -124,12 +125,9 @@ const Products = () => {
   }
 
   return(
-    <div>
-      <div className="headerSpace" />
-      <div className="main_body">
-        <ProductList />
-      </div>
-    </div>
+    <PageContainer>
+      <ProductList />
+    </PageContainer>
   )
 }
 
