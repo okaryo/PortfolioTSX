@@ -1,10 +1,3 @@
-.product_card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  grid-row-gap: 20px;
-  grid-column-gap: 10px;
-  justify-content: space-evenly;
-}
 .product_card {
   position: relative;
   width: 100%;
@@ -81,15 +74,3 @@
   line-height: 36px;
 }
 
-@media (max-width: 1080px) {
-  .product_card-grid {
-    grid-template-columns: repeat(auto-fill, 48%);
-  }
-}
-
-@media (max-width: 650px) {
-  .product_card-grid {
-    grid-template-columns: repeat(auto-fill, 100%);
-    grid-row-gap: 20px;
-  }
-}

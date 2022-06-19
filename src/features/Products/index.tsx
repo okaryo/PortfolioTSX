@@ -1,3 +1,4 @@
+import styled from '@emotion/styled'
 import React from 'react'
 import PageContainer from '../../components/PageContainer'
 import { dateFormatter } from '../../utils/dateFormatter'
@@ -36,6 +37,27 @@ type ButtonProps = {
     type: string
   }
 }
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  justify-content: space-evenly;
+
+  @media (max-width: 1080px) {
+    .product_card-grid {
+      grid-template-columns: repeat(auto-fill, 48%);
+    }
+  }
+
+  @media (max-width: 650px) {
+    .product_card-grid {
+      grid-template-columns: repeat(auto-fill, 100%);
+      grid-row-gap: 20px;
+    }
+  }
+`
 
 const Products = () => {
   const ProductList = () => {
@@ -102,7 +124,7 @@ const Products = () => {
     }
 
     return(
-      <div className="product_card-grid">
+      <GridContainer>
         {products.map((product, index) => (
             <div key={index} className="product_card">
               <div className="product_card_image_continer">
@@ -120,7 +142,7 @@ const Products = () => {
             </div>
           )
         )}
-      </div>
+      </GridContainer>
     )
   }
 
