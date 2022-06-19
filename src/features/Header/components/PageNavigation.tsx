@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from '@emotion/styled'
+import { NavLink } from 'react-router-dom'
+import { NavLinkProps } from 'react-router-dom'
 
 type PageNavigationProps = {
   isActive: boolean,
@@ -11,17 +13,24 @@ type NavigationProps = {
   active: boolean
 }
 
-const Container = styled.li`
+const Container = styled(NavLink)`
   display: inline-block;
   height: 48px;
   vertical-align: middle;
-  border-bottom: ${(props: NavigationProps) => props.active ? '2px solid #75e900' : null};
 
-  :hover, :focus {
-    border-bottom: ${(props: NavigationProps) => props.active ? '2px solid #75e900' : '2px solid #757575'};
+  &.active {
+    border-bottom: 2px solid #75e900;
   }
 
-  + li {
+  :hover, :focus {
+    border-bottom: 2px solid #757575;
+  }
+
+  &.active:hover, :focus {
+    border-bottom: 2px solid #75e900;
+  }
+
+  + a {
     margin-left: 24px;
   }
 
@@ -30,15 +39,10 @@ const Container = styled.li`
     height: 48px;
     vertical-align: middle;
 
-    + li {
+    + a {
       margin-left: 0;
     }
   }
-`
-
-const NavigationLink = styled(Link)`
-  display: block;
-  height: 48px;
 `
 
 const NavigationLinkText = styled.span`
@@ -55,10 +59,8 @@ const NavigationLinkText = styled.span`
 
 const PageNavigation = (props: PageNavigationProps) => {
   return(
-    <Container active={props.isActive}>
-      <NavigationLink  to={props.link}>
-        <NavigationLinkText active={props.isActive}>{props.title}</NavigationLinkText>
-      </NavigationLink>
+    <Container to={props.link}>
+      <NavigationLinkText active={props.isActive}>{props.title}</NavigationLinkText>
     </Container>
   )
 }

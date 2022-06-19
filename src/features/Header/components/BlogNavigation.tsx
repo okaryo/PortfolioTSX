@@ -1,31 +1,25 @@
 import styled from '@emotion/styled'
 import externalLinkIcon from '../assets/external_link_icon.png'
 
-const Container = styled.li`
+const Container = styled.a`
   display: inline-block;
   height: 48px;
   vertical-align: middle;
+  margin-left: 24px;
 
   :hover, :focus {
     border-bottom: 2px solid #757575;
-  }
-
-  + li {
-    margin-left: 24px;
   }
 
   @media (max-width: 720px) {
     display: inline-block;
     height: 48px;
     vertical-align: middle;
-
-    + li {
-      margin-left: 0;
-    }
+    margin-left: 0;
   }
 `
 
-const NavigationLink = styled.a`
+const NavigationText = styled.span`
   display: flex;
   height: 48px;
   align-items: center;
@@ -43,11 +37,11 @@ const NavigationIcon = styled.img`
 
 const BlogNavigation = () => {
   return(
-    <Container>
-      <NavigationLink href="https://blog.okaryo.io" target="_blank" rel="noopener noreferrer">
-          BLOG
-          <NavigationIcon src={externalLinkIcon} alt="external link icon" width="24" height="24" loading="lazy"/>
-      </NavigationLink>
+    <Container href="https://blog.okaryo.io" target="_blank" rel="noopener noreferrer">
+      <NavigationText>
+        BLOG
+        <NavigationIcon src={externalLinkIcon} alt="external link icon" width="24" height="24" loading="lazy"/>
+      </NavigationText>
     </Container>
   )
 }
