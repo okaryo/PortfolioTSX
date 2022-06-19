@@ -3,13 +3,7 @@ import Products from '../components/Products'
 import Footer from '../features/Footer'
 
 const ProductPage = () => {
-  return(
-    <div>
-      <Header />
-      <Products />
-      <Footer />
-    </div>
-  )
+  return <Products />
 }
 
 export default ProductPage

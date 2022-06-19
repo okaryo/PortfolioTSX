@@ -3,13 +3,7 @@ import Contact from '../components/Contact'
 import Footer from '../features/Footer'
 
 const ContactPage = () => {
-  return(
-    <div>
-      <Header />
-      <Contact />
-      <Footer />
-    </div>
-  )
+  return <Contact />
 }
 
 export default ContactPage

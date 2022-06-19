@@ -3,13 +3,7 @@ import Profile from '../components/Profile'
 import Footer from '../features/Footer'
 
 const ProfilePage = () => {
-  return(
-    <div>
-      <Header />
-      <Profile />
-      <Footer />
-    </div>
-  )
+  return <Profile />
 }
 
 export default ProfilePage
