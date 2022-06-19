@@ -1,12 +1,34 @@
 import styled from '@emotion/styled'
-import { NavLink } from 'react-router-dom'
+import { ReactNode } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 type PageNavigationProps = {
   title: string,
   link: string,
 }
 
-const Container = styled(NavLink)`
+type NavLinkProps = {
+  to: string,
+  className?: string,
+  children: ReactNode
+}
+
+const NavLinkContainer = (props: NavLinkProps) =>  {
+  const { to, className, children } = props
+  const shouldActivateProductsTab = useLocation().pathname === '/' && to === '/products'
+
+  return (
+    <NavLink
+      className={({isActive}) =>
+        [className, isActive || shouldActivateProductsTab ? 'active' : ''].join(' ')
+      }
+      to={to}
+      children={children}
+    />
+  )
+}
+
+const StyledNavLinkContainer = styled(NavLinkContainer)`
   display: inline-block;
   height: 48px;
   vertical-align: middle;
@@ -54,9 +76,9 @@ const NavigationLinkText = styled.span`
 
 const PageNavigation = (props: PageNavigationProps) => {
   return(
-    <Container to={props.link}>
+    <StyledNavLinkContainer to={props.link}>
       <NavigationLinkText>{props.title}</NavigationLinkText>
-    </Container>
+    </StyledNavLinkContainer>
   )
 }
 
