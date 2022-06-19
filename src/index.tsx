@@ -8,7 +8,6 @@ import './stylesheets/Profile.css'
 import './stylesheets/Contact.css'
 import './stylesheets/NotFound.css'
 import './stylesheets/Header.css'
-import './stylesheets/Footer.css'
 
 ReactDOM.render(
   <React.StrictMode>

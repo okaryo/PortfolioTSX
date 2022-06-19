@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Profile from '../components/Profile'
-import Footer from '../components/Footer/Footer'
+import Footer from '../features/Footer'
 
 const ProfilePage = () => {
   return(
