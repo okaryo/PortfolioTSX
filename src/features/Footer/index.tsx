@@ -1,6 +1,6 @@
 import React from 'react'
 import NavigationList from './components/NavigationList'
-import { FooterNavigationItems } from '../../constants/FooterNavigationItems'
+import { NavigationItems } from './constants/NavigationItems'
 import styled from '@emotion/styled'
 
 const Container = styled.footer`
@@ -25,7 +25,7 @@ const GANote = styled.p`
 const Footer = () => {
   return(
     <Container>
-      <NavigationList navigationItems={FooterNavigationItems} />
+      <NavigationList navigationItems={NavigationItems} />
       <CopyRight>Copyright &copy;{new Date().getFullYear()} OKARYO</CopyRight>
       <GANote>This site uses Google Analytics.</GANote>
     </Container>
