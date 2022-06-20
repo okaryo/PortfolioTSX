@@ -6,6 +6,7 @@ import ProgrammingSkills from './data/programming_skills.json'
 import PageContainer from '../../components/PageContainer'
 import styled from '@emotion/styled'
 import AboutMe from './components/AboutMe'
+import ProfileHeader from './components/ProfileHeader'
 
 interface SkillBarsProps {
   skillBars: {
@@ -48,7 +49,7 @@ const Profile = () => {
         <AboutMe />
         <div className="profile_detail">
           <section className="profile_history">
-            <h3>Experience</h3>
+            <ProfileHeader title={'Experience'} />
             <ul>
               {
                 Experiences.map((experience) => {
@@ -60,7 +61,7 @@ const Profile = () => {
                 })
               }
             </ul>
-            <h3>Education</h3>
+            <ProfileHeader title={'Education'} />
             <ul>
               {
                 Educations.map((education) => {
@@ -72,7 +73,7 @@ const Profile = () => {
                 })
               }
             </ul>
-            <h3>Qualification</h3>
+            <ProfileHeader title={'Qualification'} />
             <ul>
               {
                 Qualifications.map((qualification) => {
@@ -86,11 +87,11 @@ const Profile = () => {
           </section>
 
           <section className="profile_skill">
-            <h3>Programming Skill</h3>
+            <ProfileHeader title={'Programming Skill'} />
             <Skills
               skillBars={ProgrammingSkills}
             />
-            <h3>Github Contribution</h3>
+            <ProfileHeader title={'Github Contribution'} />
             <section className="profile_githubContributions">
               <a href="https://github.com/okaryo" target="_blank" rel="noopener noreferrer">
                 <img
