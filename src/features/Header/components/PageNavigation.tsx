@@ -23,8 +23,9 @@ const NavLinkContainer = (props: NavLinkProps) =>  {
         [className, isActive || shouldActivateProductsTab ? 'active' : ''].join(' ')
       }
       to={to}
-      children={children}
-    />
+    >
+      {children}
+    </NavLink>
   )
 }
 

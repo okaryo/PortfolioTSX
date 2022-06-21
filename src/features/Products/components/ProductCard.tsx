@@ -77,19 +77,19 @@ const Buttons = styled.div`
 const ProductCard = (props: ProductCardProps) => {
   const { name, date, description, imageUrl, links, status } = props
 
-    const ButtonList: React.FC<ButtonListProps> = (props) => {
+    const ButtonList: React.FC<ButtonListProps> = (props: ButtonListProps) => {
       const { links, status } = props.buttonListProps
 
 
       if (status === 'closed') {
         return(
           <Buttons>
-            <Button buttonProps={{ link: '', type: 'closed' }} />
+            <Button link={''} type={'closed'} />
           </Buttons>
         )
       } else {
         const buttonItems = links.map((link) =>
-          <Button key={link.type} buttonProps={{ link: link.link, type: link.type }} />
+          <Button key={link.type} link={link.link} type={link.type} />
         )
         return(
           <Buttons>

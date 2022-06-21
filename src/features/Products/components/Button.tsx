@@ -6,10 +6,8 @@ import {
   PRIMARY_BUTTON_COLOR} from '../constants/Colors'
 
 type ButtonProps = {
-  buttonProps: {
-    link: string
-    type: string
-  }
+  link: string
+  type: string
 }
 
 const ActionButton = styled.div`
@@ -49,8 +47,8 @@ const ButtonLink = styled.a`
   line-height: 36px;
 `
 
-const Button: React.FC<ButtonProps> = (props) => {
-  const { link, type } = props.buttonProps
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
+  const { link, type } = props
   const DEFAULT_BUTTON_TEXT_COLOR = '#FFFFFF'
   const DEFAULT_BUTTON_COLOR = CLOSED_BUTTON_COLOR
   let buttonColor = DEFAULT_BUTTON_COLOR

@@ -94,7 +94,7 @@ const Contact = () => {
     }
   }
 
-  const handleSubmit = (_: React.FormEvent<HTMLButtonElement>) => {
+  const handleSubmit = () => {
     if (isValidateInputValues()) return
 
     const webHookUrl = import.meta.env.VITE_SLACK_WEBHOOK_URL
@@ -109,14 +109,14 @@ content: ${content}`
       webHookUrl,
       JSON.stringify(data),
     )
-    .then(_ => {
+    .then(() => {
         setRequestErrorText('')
         setNameErrorText('')
         setEmailErrorText('')
         setContentErrorText('')
         setAlreadySent(true)
       }
-    ).catch(_ => {
+    ).catch(() => {
       setRequestErrorText('Error Occurred!')
     })
   }

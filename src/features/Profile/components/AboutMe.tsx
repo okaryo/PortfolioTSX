@@ -61,7 +61,7 @@ const AboutMe = () => {
         <MeName>OKARYO / Ryotaro Oka</MeName>
         <MeJob>Web/Mobile Engineer</MeJob>
         <MeComment>
-          I love making things. I want to become a person who can create things that expand people's perspectives and choices.
+          I love making things. I want to become a person who can create things that expand people&apos;s perspectives and choices.
         </MeComment>
         <SNSIcons>
           <li>
