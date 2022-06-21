@@ -1,13 +1,14 @@
-import { dateFormatter } from '../../utils/dateFormatter'
-import Experiences from './data/experiences.json'
-import Educations from './data/educations.json'
-import Qualifications from './data/qualifications.json'
-import ProgrammingSkills from './data/programming_skills.json'
-import PageContainer from '../../components/PageContainer'
 import styled from '@emotion/styled'
+
+import PageContainer from '../../components/PageContainer'
+import { dateFormatter } from '../../utils/dateFormatter'
 import AboutMe from './components/AboutMe'
 import ProfileHeader from './components/ProfileHeader'
 import SkillProgressBar from './components/SkillProgressBar'
+import Educations from './data/educations.json'
+import Experiences from './data/experiences.json'
+import ProgrammingSkills from './data/programming_skills.json'
+import Qualifications from './data/qualifications.json'
 
 interface SkillBarsProps {
   skillBars: {

@@ -1,7 +1,7 @@
-import React from 'react'
+import styled from '@emotion/styled'
+
 import NavigationList from './components/NavigationList'
 import { NavigationItems } from './constants/NavigationItems'
-import styled from '@emotion/styled'
 
 const Container = styled.footer`
   padding: 20px;

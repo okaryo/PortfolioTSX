@@ -1,6 +1,7 @@
-import notFoundImage from './assets/not_found.png'
 import styled from '@emotion/styled'
+
 import PageContainer from '../../components/PageContainer'
+import notFoundImage from './assets/not_found.png'
 
 const Container = styled.div`
   display: flex;

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+
 import PageContainer from '../../components/PageContainer'
 import ProductCard from './components/ProductCard'
 import productsData from './data/products.json'

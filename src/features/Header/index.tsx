@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import Title from './components/Title'
+
 import Navigation from './components/Navigations'
+import Title from './components/Title'
 
 const Container = styled.header`
   position: fixed;

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import PageNavigation from './PageNavigation'
+
 import BlogNavigation from './BlogNavigation'
+import PageNavigation from './PageNavigation'
 
 const Container = styled.nav`
   flex: 1 0 auto;

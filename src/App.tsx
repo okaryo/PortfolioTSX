@@ -1,15 +1,14 @@
 import {
   BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom'
+  Route,
+  Routes} from 'react-router-dom'
 
+import Contact from './features/Contact'
+import Footer from './features/Footer'
+import Header from './features/Header'
+import NotFound from './features/NotFound'
 import Products from './features/Products'
 import Profile from './features/Profile'
-import Contact from './features/Contact'
-import NotFound from './features/NotFound'
-import Header from './features/Header'
-import Footer from './features/Footer'
 
 const App = () => {
   return (

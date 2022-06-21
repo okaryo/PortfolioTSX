@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-
 import './styles/global.css'
 import './styles/Profile.css'
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>

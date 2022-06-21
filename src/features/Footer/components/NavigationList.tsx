@@ -1,6 +1,7 @@
-import React from 'react'
-import FooterNavigationItem from './NavigationItem'
 import styled from '@emotion/styled'
+import React from 'react'
+
+import FooterNavigationItem from './NavigationItem'
 
 type NavigationListProps = {
   navigationItems: {

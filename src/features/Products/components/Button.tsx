@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
+
 import {
   CLOSED_BUTTON_COLOR,
-  PRIMARY_BUTTON_COLOR,
-  GITHUB_BUTTON_COLOR
-} from '../constants/Colors'
+  GITHUB_BUTTON_COLOR,
+  PRIMARY_BUTTON_COLOR} from '../constants/Colors'
 
 type ButtonProps = {
   buttonProps: {

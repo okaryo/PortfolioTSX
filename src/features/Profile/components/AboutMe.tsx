@@ -1,11 +1,12 @@
+import styled from '@emotion/styled'
+
 import me from '../assets/images/me.png'
-import twitterLogo from '../assets/logos/twitter_logo.svg'
+import bookmeterLogo from '../assets/logos/bookmeter_logo.png'
+import connpassLogo from '../assets/logos/connpass_logo.svg'
 import githubLogo from '../assets/logos/github_logo.svg'
 import qiitaLogo from '../assets/logos/qiita_logo.png'
-import connpassLogo from '../assets/logos/connpass_logo.svg'
-import bookmeterLogo from '../assets/logos/bookmeter_logo.png'
 import suzuriLogo from '../assets/logos/suzuri_logo.svg'
-import styled from '@emotion/styled'
+import twitterLogo from '../assets/logos/twitter_logo.svg'
 
 const Container = styled.section`
   display: flex;
