@@ -76,7 +76,7 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
     <ActionButton style={{ backgroundColor: buttonColor }}>
       <ButtonLink
         href={link}
-        target={link && link !== '/' ? "_blank" : ""}
+        target={link && link !== '/' ? '_blank' : ''}
         rel="noopener noreferrer"
         style={{ color: buttonTextColor }}
       >

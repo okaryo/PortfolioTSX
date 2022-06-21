@@ -90,7 +90,7 @@ const Contact = () => {
         setContent(event.target.value)
         break
       default:
-        console.error('not found')
+        break
     }
   }
 

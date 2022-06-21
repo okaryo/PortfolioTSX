@@ -1,7 +1,7 @@
-import styled from "@emotion/styled"
+import styled from '@emotion/styled'
 
-import { dateFormatter } from "../../../utils/dateFormatter"
-import Button from "./Button"
+import { dateFormatter } from '../../../utils/dateFormatter'
+import Button from './Button'
 
 type ProductCardProps = {
   name: string,
