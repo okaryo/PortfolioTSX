@@ -7,6 +7,7 @@ import PageContainer from '../../components/PageContainer'
 import styled from '@emotion/styled'
 import AboutMe from './components/AboutMe'
 import ProfileHeader from './components/ProfileHeader'
+import SkillProgressBar from './components/SkillProgressBar'
 
 interface SkillBarsProps {
   skillBars: {
@@ -23,18 +24,9 @@ const Profile = () => {
   const Skills = (props: SkillBarsProps) => {
     const SkillBars = props.skillBars
 
-    const SkillItems = SkillBars.map((skillBar, index) => {
-      return(
-        <div key={index} className="profile_skill_unit">
-          <h5>{skillBar.name}</h5>
-          <div className="profile_skill_bar">
-            <div className="profile_skill_progress" style={{width: `${skillBar.learningLevel}%`}}></div>
-            <div className="profile_skill_unprogress"></div>
-            <div className="profile_skill_bar_omit-line"></div>
-          </div>
-        </div>
-      )
-    })
+    const SkillItems = SkillBars.map((skillBar, index) => 
+      <SkillProgressBar key={index} name={skillBar.name} progress={skillBar.learningLevel} />
+    )
 
     return (
       <div className="profile_skill_container">

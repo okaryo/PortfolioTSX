@@ -26,45 +26,6 @@
   margin-bottom: 30px;
   justify-content: space-between;
 }
-.profile_skill_unit {
-  width: 48%;
-  margin-bottom: 15px;
-}
-.profile_skill_unit h5 {
-  margin-bottom: 1px;
-  font-size: 14px;
-}
-.profile_skill_bar {
-  height: 11px;
-  position: relative;
-}
-.profile_skill_progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #75e900;
-  z-index: 2;
-}
-.profile_skill_unprogress {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #EEEEEE;
-}
-.profile_skill_bar_omit-line {
-  position: absolute;
-  top: -1px;
-  right: 10%;
-  width: 6px;
-  height: 13px;
-  background-color: #FFFFFF;
-  border-left: 1px dotted #AAAAAA;
-  border-right: 1px dotted #AAAAAA;
-  z-index: 3;
-}
 .profile_githubContributions img {
   width: 100%;
 }
