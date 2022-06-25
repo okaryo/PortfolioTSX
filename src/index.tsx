@@ -1,5 +1,4 @@
 import './styles/global.css'
-import './styles/Profile.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
