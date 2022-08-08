@@ -1,5 +1,22 @@
 [
   {
+    "name": "flutter_build_mode",
+    "date": "2022-08-07",
+    "image": "https://okaryo.github.io/api/images/portfolio/products/flutter_build_mode.png",
+    "description": "Flutter package to get the build mode of the app!",
+    "links": [
+      {
+        "type": "site",
+        "link": "https://pub.dev/packages/flutter_build_mode"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/okaryo/flutter_build_mode"
+      }
+    ],
+    "status": "active"
+  },
+  {
     "name": "long_time_no_notification",
     "date": "2022-05-09",
     "image": "https://okaryo.github.io/api/images/portfolio/products/long_time_no_notification.png",
