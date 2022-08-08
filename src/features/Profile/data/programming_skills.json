@@ -46,5 +46,9 @@
   {
     "name": "Android",
     "learningLevel": 25
+  },
+  {
+    "name": "Go",
+    "learningLevel": 10
   }
 ]
