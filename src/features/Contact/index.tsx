@@ -99,7 +99,6 @@ const Contact = () => {
 
     const webHookUrl = import.meta.env.VITE_SLACK_WEBHOOK_URL
     const data = {
-      'channel': '#portfolio_contact',
       'text': `
 name: ${name},
 email: ${email},
