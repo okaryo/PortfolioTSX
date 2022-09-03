@@ -24,16 +24,12 @@ const GridContainer = styled.div`
   justify-content: space-evenly;
 
   @media (max-width: 1080px) {
-    .product_card-grid {
-      grid-template-columns: repeat(auto-fill, 48%);
-    }
+    grid-template-columns: repeat(auto-fill, 48%);
   }
 
   @media (max-width: 650px) {
-    .product_card-grid {
-      grid-template-columns: repeat(auto-fill, 100%);
-      grid-row-gap: 20px;
-    }
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-row-gap: 20px;
   }
 `
 
