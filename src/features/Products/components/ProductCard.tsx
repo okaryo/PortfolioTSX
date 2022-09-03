@@ -26,7 +26,8 @@ type ButtonListProps = {
 }
 
 const Card = styled.div`
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
               0 1px 3px 1px rgba(60, 64, 67, 0.16);
@@ -42,9 +43,19 @@ const CardImage = styled.img`
   border-radius: 3px 3px 0 0;
 `
 
-const CardTextContainer = styled.div`
+const CardBodyContainer = styled.div`
+  display: flex;
+  flex: 2;
+  flex-direction: column;
   padding: 10px;
   border-top: 1px solid #e8eaed;
+`
+
+const CardTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 16px;
 `
 
 const Header = styled.h3`
@@ -63,15 +74,13 @@ const Date = styled.time`
 `
 
 const Description = styled.p`
-  margin-bottom: 52px;
   color: #5f6368;
   font-size: 16px;
 `
 
 const Buttons = styled.div`
-  position: absolute;
   display: flex;
-  bottom: 10px;
+  gap: 8px;
 `
 
 const ProductCard = (props: ProductCardProps) => {
@@ -102,12 +111,14 @@ const ProductCard = (props: ProductCardProps) => {
   return (
     <Card>
       <CardImage src={imageUrl} alt={name} loading="lazy" />
-      <CardTextContainer>
-        <Header>{name}</Header>
-        <Date>{dateFormatter(date)}</Date>
-        <Description>{description}</Description>
+      <CardBodyContainer>
+        <CardTextContainer>
+          <Header>{name}</Header>
+          <Date>{dateFormatter(date)}</Date>
+          <Description>{description}</Description>
+        </CardTextContainer>
         <ButtonList buttonListProps={{ links: links, status: status }} />
-      </CardTextContainer>
+      </CardBodyContainer>
     </Card>
   )
 }
