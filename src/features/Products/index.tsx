@@ -18,9 +18,9 @@ type Product = {
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  grid-row-gap: 20px;
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, max-content));
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
   justify-content: space-evenly;
 
   @media (max-width: 1080px) {
@@ -29,7 +29,7 @@ const GridContainer = styled.div`
 
   @media (max-width: 650px) {
     grid-template-columns: repeat(auto-fill, 100%);
-    grid-row-gap: 20px;
+    grid-row-gap: 16px;
   }
 `
 
