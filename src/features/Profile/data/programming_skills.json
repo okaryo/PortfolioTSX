@@ -49,6 +49,10 @@
   },
   {
     "name": "Go",
-    "learningLevel": 10
+    "learningLevel": 30
+  },
+  {
+    "name": "SQL",
+    "learningLevel": 40
   }
 ]
