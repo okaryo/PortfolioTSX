@@ -3,3 +3,7 @@
 OKARYO's Portfolio by TSX! 
 
 👉 https://okaryo.io
+
+New Repository
+
+👉 https://github.com/okaryo/PortfolioSvelte
